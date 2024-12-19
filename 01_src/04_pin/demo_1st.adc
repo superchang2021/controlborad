@@ -1,0 +1,64 @@
+set_pin_assignment	{ a_out_able }	{ LOCATION = B6; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ b_out_able }	{ LOCATION = B3; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ emif_addr_in[0] }	{ LOCATION = D14; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[10] }	{ LOCATION = C16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[11] }	{ LOCATION = C15; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[12] }	{ LOCATION = D16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[1] }	{ LOCATION = A14; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[2] }	{ LOCATION = B15; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[3] }	{ LOCATION = B16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[4] }	{ LOCATION = E15; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[5] }	{ LOCATION = E16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[6] }	{ LOCATION = K15; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[7] }	{ LOCATION = L16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[8] }	{ LOCATION = F14; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_addr_in[9] }	{ LOCATION = F13; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_cas_in }	{ LOCATION = N12; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_ce_in }	{ LOCATION = C13; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_cke_in }	{ LOCATION = A13; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_clk_in }	{ LOCATION = E13; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[0] }	{ LOCATION = T13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[10] }	{ LOCATION = M16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[11] }	{ LOCATION = R16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[12] }	{ LOCATION = P15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[13] }	{ LOCATION = N16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[14] }	{ LOCATION = P16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[15] }	{ LOCATION = M15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[1] }	{ LOCATION = M13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[2] }	{ LOCATION = R14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[3] }	{ LOCATION = T14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[4] }	{ LOCATION = L14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[5] }	{ LOCATION = M14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[6] }	{ LOCATION = R15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[7] }	{ LOCATION = T15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[8] }	{ LOCATION = L13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_data[9] }	{ LOCATION = K14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_dqm0_in }	{ LOCATION = P11; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_dqm1_in }	{ LOCATION = P12; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_ras_in }	{ LOCATION = N14; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ emif_we_in }	{ LOCATION = C11; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ encoder_a }	{ LOCATION = F7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ encoder_b }	{ LOCATION = E6; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ encoder_z }	{ LOCATION = C7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ key_in[0] }	{ LOCATION = M3; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ key_in[1] }	{ LOCATION = M4; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ key_in[2] }	{ LOCATION = B1; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ key_in[3] }	{ LOCATION = B2; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ led_out[0] }	{ LOCATION = A8; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ led_out[1] }	{ LOCATION = A9; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ led_out[2] }	{ LOCATION = A10; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ led_out[3] }	{ LOCATION = A11; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sdo_a }	{ LOCATION = B5; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sdo_b }	{ LOCATION = A5; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sincos_clk }	{ LOCATION = A4; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sincos_cs_n }	{ LOCATION = C4; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ sys_clk_in }	{ LOCATION = J16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ sys_rst_n_in }	{ LOCATION = A6; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
+set_pin_assignment	{ z_out_able }	{ LOCATION = A7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+
+
+
+
+
+
+

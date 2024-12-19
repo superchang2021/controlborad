@@ -1,0 +1,51 @@
+standard
+***Report Model: demo_1st_top Device: EG4X20BG256***
+
+IO Statistics
+#IO                        57
+  #input                   29
+  #output                   9
+  #inout                   19
+
+LUT Statistics
+#Total_luts               642
+  #lut4                   333
+  #lut5                    40
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b             269
+
+Utilization Statistics
+#lut                      642   out of  19600    3.28%
+#reg                      282   out of  19600    1.44%
+#le                         0
+#dsp                        0   out of     29    0.00%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       57   out of    188   30.32%
+  #ireg                     1
+  #oreg                     6
+  #treg                    19
+#pll                        1   out of      4   25.00%
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------------+
+|Instance               |Module              |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------------+
+|top                    |demo_1st_top        |373     |269     |308     |0       |0       |
+|  u1_pll               |my_pll              |1       |0       |0       |0       |0       |
+|  u2_op                |emif_signal_op      |7       |0       |5       |0       |0       |
+|  u3_setio             |emif_setio          |11      |0       |8       |0       |0       |
+|  u7_encoder           |encoder_control     |304     |240     |237     |0       |0       |
+|    u13_sin            |sin_control         |45      |9       |13      |0       |0       |
+|      u21_sample       |ads8350_sample      |45      |9       |13      |0       |0       |
+|    u14_tawa           |tawa_control        |0       |0       |0       |0       |0       |
+|      u31_uart_control |uart_control        |0       |0       |0       |0       |0       |
+|      u33_uart_send    |uart_send           |0       |0       |0       |0       |0       |
+|      u34_crc          |crc_calc            |0       |0       |0       |0       |0       |
+|    u15_endat          |endat_control       |246     |214     |205     |0       |0       |
+|      u41_control      |endat_contol_sample |246     |214     |205     |0       |0       |
+|  u8_led               |led                 |50      |29      |32      |0       |0       |
++-----------------------------------------------------------------------------------------+

@@ -1,0 +1,48 @@
+standard
+***Report Model: demo_1st_top Device: EG4X20BG256***
+
+IO Statistics
+#IO                        57
+  #input                   29
+  #output                   9
+  #inout                   19
+
+Gate Statistics
+#Basic gates              774
+  #and                    163
+  #nand                     0
+  #or                     163
+  #nor                      0
+  #xor                      1
+  #xnor                     0
+  #buf                      0
+  #not                     36
+  #bufif1                  19
+  #MX21                   106
+  #FADD                     0
+  #DFF                    286
+  #LATCH                    0
+#MACRO_ADD                 16
+#MACRO_EQ                  99
+#MACRO_MUX                244
+#MACRO_OTHERS               1
+
+Report Hierarchy Area:
++--------------------------------------------------------------------+
+|Instance               |Module              |gates  |seq    |macros |
++--------------------------------------------------------------------+
+|top                    |demo_1st_top        |488    |286    |116    |
+|  u1_pll               |my_pll              |0      |0      |1      |
+|  u2_op                |emif_signal_op      |3      |5      |3      |
+|  u3_setio             |emif_setio          |6      |9      |3      |
+|  u7_encoder           |encoder_control     |445    |238    |104    |
+|    u13_sin            |sin_control         |153    |14     |67     |
+|      u21_sample       |ads8350_sample      |153    |14     |67     |
+|    u14_tawa           |tawa_control        |0      |0      |0      |
+|      u31_uart_control |uart_control        |0      |0      |0      |
+|      u33_uart_send    |uart_send           |0      |0      |0      |
+|      u34_crc          |crc_calc            |0      |0      |0      |
+|    u15_endat          |endat_control       |292    |205    |35     |
+|      u41_control      |endat_contol_sample |292    |205    |35     |
+|  u8_led               |led                 |13     |32     |5      |
++--------------------------------------------------------------------+

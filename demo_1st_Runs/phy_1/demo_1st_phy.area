@@ -1,0 +1,127 @@
+standard
+***Report Model: demo_1st_top Device: EG4X20BG256***
+
+IO Statistics
+#IO                        57
+  #input                   29
+  #output                   9
+  #inout                   19
+
+Utilization Statistics
+#lut                      585   out of  19600    2.98%
+#reg                      290   out of  19600    1.48%
+#le                       602
+  #lut only               312   out of    602   51.83%
+  #reg only                17   out of    602    2.82%
+  #lut&reg                273   out of    602   45.35%
+#dsp                        0   out of     29    0.00%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       57   out of    188   30.32%
+  #ireg                     1
+  #oreg                     6
+  #treg                    19
+#pll                        1   out of      4   25.00%
+#gclk                       3   out of     16   18.75%
+
+Clock Resource Statistics
+Index     ClockNet                                         Type               DriverType         Driver                                                    Fanout
+#1        u7_encoder/u11_biss/clk                          GCLK               pll                u1_pll/pll_inst.clkc1                                     112
+#2        clk_100M                                         GCLK               pll                u1_pll/pll_inst.clkc2                                     45
+#3        u1_pll/clk0_buf                                  GCLK               pll                u1_pll/pll_inst.clkc0                                     23
+#4        u7_encoder/u15_endat/u41_control/clk_out_reg1    GCLK               mslice             u7_encoder/u15_endat/u41_control/flag_S1_n_syn_93.q0      12
+#5        u7_encoder/u15_endat/u41_control/clk_200k        GCLK               lslice             u7_encoder/u15_endat/u41_control/clk_200k_reg_syn_9.q1    11
+#6        sys_clk_in_dup_1                                 GeneralRouting     io                 sys_clk_in_syn_2.di                                       1
+
+
+Detailed IO Report
+
+        Name          Direction    Location    IOStandard    DriveStrength    PullType    PackReg  
+  emif_addr_in[12]      INPUT        D16        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[11]      INPUT        C15        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[10]      INPUT        C16        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[9]       INPUT        F13        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[8]       INPUT        F14        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[7]       INPUT        L16        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[6]       INPUT        K15        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[5]       INPUT        E16        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[4]       INPUT        E15        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[3]       INPUT        B16        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[2]       INPUT        B15        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[1]       INPUT        A14        LVCMOS25          N/A          PULLUP      NONE    
+  emif_addr_in[0]       INPUT        D14        LVCMOS25          N/A          PULLUP      NONE    
+    emif_cas_in         INPUT        N12        LVCMOS25          N/A          PULLUP      IREG    
+     emif_ce_in         INPUT        C13        LVCMOS25          N/A          PULLUP      NONE    
+    emif_cke_in         INPUT        A13        LVCMOS25          N/A          PULLUP      NONE    
+    emif_clk_in         INPUT        E13        LVCMOS25          N/A          PULLUP      NONE    
+    emif_dqm0_in        INPUT        P11        LVCMOS25          N/A          PULLUP      NONE    
+    emif_dqm1_in        INPUT        P12        LVCMOS25          N/A          PULLUP      NONE    
+    emif_ras_in         INPUT        N14        LVCMOS25          N/A          PULLUP      NONE    
+     emif_we_in         INPUT        C11        LVCMOS25          N/A          PULLUP      NONE    
+     key_in[3]          INPUT         B2        LVCMOS25          N/A          PULLUP      NONE    
+     key_in[2]          INPUT         B1        LVCMOS25          N/A          PULLUP      NONE    
+     key_in[1]          INPUT         M4        LVCMOS25          N/A          PULLUP      NONE    
+     key_in[0]          INPUT         M3        LVCMOS25          N/A          PULLUP      NONE    
+       sdo_a            INPUT         B5        LVCMOS25          N/A          PULLUP      NONE    
+       sdo_b            INPUT         A5        LVCMOS25          N/A          PULLUP      NONE    
+     sys_clk_in         INPUT        J16        LVCMOS25          N/A          PULLUP      NONE    
+    sys_rst_n_in        INPUT         A6        LVCMOS25          N/A          PULLUP      NONE    
+     a_out_able        OUTPUT         B6        LVCMOS25           8            NONE       NONE    
+     b_out_able        OUTPUT         B3        LVCMOS25           8            NONE       NONE    
+     led_out[3]        OUTPUT        A11        LVCMOS25           8            NONE       OREG    
+     led_out[2]        OUTPUT        A10        LVCMOS25           8            NONE       OREG    
+     led_out[1]        OUTPUT         A9        LVCMOS25           8            NONE       OREG    
+     led_out[0]        OUTPUT         A8        LVCMOS25           8            NONE       OREG    
+     sincos_clk        OUTPUT         A4        LVCMOS25           8            NONE       OREG    
+    sincos_cs_n        OUTPUT         C4        LVCMOS25           8            NONE       OREG    
+     z_out_able        OUTPUT         A7        LVCMOS25           8            NONE       NONE    
+   emif_data[15]        INOUT        M15        LVCMOS25           8           PULLUP      TREG    
+   emif_data[14]        INOUT        P16        LVCMOS25           8           PULLUP      TREG    
+   emif_data[13]        INOUT        N16        LVCMOS25           8           PULLUP      TREG    
+   emif_data[12]        INOUT        P15        LVCMOS25           8           PULLUP      TREG    
+   emif_data[11]        INOUT        R16        LVCMOS25           8           PULLUP      TREG    
+   emif_data[10]        INOUT        M16        LVCMOS25           8           PULLUP      TREG    
+    emif_data[9]        INOUT        K14        LVCMOS25           8           PULLUP      TREG    
+    emif_data[8]        INOUT        L13        LVCMOS25           8           PULLUP      TREG    
+    emif_data[7]        INOUT        T15        LVCMOS25           8           PULLUP      TREG    
+    emif_data[6]        INOUT        R15        LVCMOS25           8           PULLUP      TREG    
+    emif_data[5]        INOUT        M14        LVCMOS25           8           PULLUP      TREG    
+    emif_data[4]        INOUT        L14        LVCMOS25           8           PULLUP      TREG    
+    emif_data[3]        INOUT        T14        LVCMOS25           8           PULLUP      TREG    
+    emif_data[2]        INOUT        R14        LVCMOS25           8           PULLUP      TREG    
+    emif_data[1]        INOUT        M13        LVCMOS25           8           PULLUP      TREG    
+    emif_data[0]        INOUT        T13        LVCMOS25           8           PULLUP      TREG    
+     encoder_a          INOUT         F7        LVCMOS25           8           PULLUP      TREG    
+     encoder_b          INOUT         E6        LVCMOS25           8           PULLUP      TREG    
+     encoder_z          INOUT         C7        LVCMOS25           8           PULLUP      TREG    
+
+Report Hierarchy Area:
++--------------------------------------------------------------------------------------------+
+|Instance          |Module              |le     |lut     |ripple  |seq     |bram    |dsp     |
++--------------------------------------------------------------------------------------------+
+|top               |demo_1st_top        |602    |485     |100     |316     |0       |0       |
+|  u1_pll          |my_pll              |2      |2       |0       |1       |0       |0       |
+|  u2_op           |emif_signal_op      |7      |7       |0       |5       |0       |0       |
+|  u3_setio        |emif_setio          |12     |12      |0       |8       |0       |0       |
+|  u7_encoder      |encoder_control     |513    |404     |92      |244     |0       |0       |
+|    u13_sin       |sin_control         |60     |55      |5       |13      |0       |0       |
+|      u21_sample  |ads8350_sample      |60     |55      |5       |13      |0       |0       |
+|    u15_endat     |endat_control       |420    |326     |78      |210     |0       |0       |
+|      u41_control |endat_contol_sample |420    |326     |78      |210     |0       |0       |
+|  u8_led          |led                 |68     |60      |8       |32      |0       |0       |
++--------------------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout    Nets  
+    #1         1       412   
+    #2         2       101   
+    #3         3       135   
+    #4         4        17   
+    #5        5-10      58   
+    #6       11-50      26   
+    #7       51-100     1    
+  Average     2.77           

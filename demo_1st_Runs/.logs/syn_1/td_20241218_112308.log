@@ -1,0 +1,568 @@
+============================================================
+   Tang Dynasty, V5.6.71036
+      Copyright (c) 2012-2023 Anlogic Inc.
+   Executable = D:/Chang/software/TD/bin/td.exe
+   Built at =   20:34:38 Mar 21 2023
+   Run by =     Admin
+   Run Date =   Wed Dec 18 11:23:08 2024
+
+   Run on =     DZ-CHANGRENWEI
+============================================================
+RUN-1002 : start command "open_project demo_1st.prj"
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../01_src/03_ip/my_pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../01_src/03_ip/my_pll.v(92)
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/demo_1st_top.v
+HDL-1007 : undeclared symbol 'clk_400M', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(100)
+HDL-1007 : undeclared symbol 'clk_200M', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(101)
+HDL-1007 : undeclared symbol 'clk_100M', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(102)
+HDL-1007 : undeclared symbol 'clk_5M', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(103)
+HDL-1007 : undeclared symbol 'we_logic', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(175)
+HDL-1007 : undeclared symbol 'emif_data_in', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(177)
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/emif_signal_op.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/emif_setio.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/led.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/emif_control.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/emif_read.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/emif_write.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/encoder_control.v
+HDL-1007 : undeclared symbol 'biss_clk', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(89)
+HDL-1007 : undeclared symbol 'crc_data', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(91)
+HDL-1007 : undeclared symbol 'err_data', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(92)
+HDL-1007 : undeclared symbol 'crc_err', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(93)
+HDL-1007 : undeclared symbol 'biss_data', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(94)
+HDL-1007 : undeclared symbol 'ssi_clk', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(104)
+HDL-1007 : undeclared symbol 'ssi_data', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(105)
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/four_sub.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/biss_control.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/ssi_control.v
+RUN-1001 : Project manager successfully analyzed 12 source files.
+RUN-1002 : start command "import_device eagle_20.db -package EG4X20BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/M14  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "import_db demo_1st_elaborate.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V5.6.71036.
+RUN-1001 : Database version number 46146.
+RUN-1001 : Import flow parameters
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import design success TD_VERSION=5.6.71036 , DB_VERSION=46146
+RUN-1002 : start command "read_adc"
+USR-1002 : read_adc file_name -trans <string> -help
+USR-6010 WARNING: ADC constraints: top model pin emif_addr_in[12] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin emif_addr_in[11] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin emif_addr_in[10] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin emif_addr_in[9] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin emif_addr_in[8] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin emif_addr_in[7] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin emif_addr_in[6] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin emif_addr_in[5] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin emif_addr_in[4] has no constraint.
+USR-6010 WARNING: ADC constraints: top model pin emif_addr_in[3] has no constraint.
+USR-6010 Similar messages will be suppressed.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file D:/Chang/software/TD/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+SYN-1012 : SanityCheck: Model "demo_1st_top"
+SYN-1012 : SanityCheck: Model "my_pll"
+SYN-1012 : SanityCheck: Model "emif_signal_op"
+SYN-1012 : SanityCheck: Model "emif_setio"
+SYN-1012 : SanityCheck: Model "emif_control"
+SYN-1012 : SanityCheck: Model "emif_read"
+SYN-1012 : SanityCheck: Model "emif_write"
+SYN-1012 : SanityCheck: Model "encoder_control"
+SYN-1012 : SanityCheck: Model "four_sub"
+SYN-1012 : SanityCheck: Model "biss_control"
+SYN-1012 : SanityCheck: Model "ssi_control"
+SYN-1012 : SanityCheck: Model "led"
+SYN-1043 : Mark my_pll as IO macro for instance bufg_feedback
+SYN-1011 : Flatten model demo_1st_top
+SYN-1032 : 4575/1883 useful/useless nets, 957/278 useful/useless insts
+SYN-1016 : Merged 1888 instances.
+SYN-1032 : 4623/1991 useful/useless nets, 949/266 useful/useless insts
+SYN-1016 : Merged 3233 instances.
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "we_logic" in ../../01_src/01_rtl/demo_1st_top.v(175)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(42)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(42)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(42)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(42)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(42)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(42)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(42)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(42)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(42)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(42)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[31]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i2" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[30]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i2" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[28]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i2" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[27]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i2" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[26]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i2" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[25]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[24]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[22]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(93)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[21]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(93)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[20]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(93)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[18]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(93)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[17]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(93)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[16]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(93)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(63)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[11]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(90)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[10]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(90)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[9]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[8]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(90)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[7]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(90)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[6]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(90)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(60)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[5]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(90)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(60)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[4]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(90)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(60)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(96)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[2]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(90)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[1]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(90)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u5_emif_write/encoder_data[0]" in ../../01_src/01_rtl/emif_write.v(26)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(90)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../01_src/01_rtl/emif_write.v(45)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_write.v(60)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u6_encoder/u2_biss/CRC_TABLE[64][9]" in ../../01_src/01_rtl/biss_control.v(117)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(646)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(621)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(630)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(627)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(624)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u6_encoder/u2_biss/CRC_TABLE[64][5]" in ../../01_src/01_rtl/biss_control.v(117)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(646)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(621)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(630)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(627)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(624)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u6_encoder/u2_biss/CRC_TABLE[64][4]" in ../../01_src/01_rtl/biss_control.v(117)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(646)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(621)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(630)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(627)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(624)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u6_encoder/u2_biss/CRC_TABLE[64][3]" in ../../01_src/01_rtl/biss_control.v(117)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(646)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(621)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(630)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(627)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(624)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u6_encoder/u2_biss/CRC_TABLE[64][2]" in ../../01_src/01_rtl/biss_control.v(117)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(646)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(621)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(630)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(627)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(624)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u6_encoder/u2_biss/CRC_TABLE[64][1]" in ../../01_src/01_rtl/biss_control.v(117)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(646)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(621)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(630)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(627)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(624)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u6_encoder/u2_biss/CRC_TABLE[64][0]" in ../../01_src/01_rtl/biss_control.v(117)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(646)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(621)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(630)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(627)
+SYN-5014 WARNING: the net's pin: pin "i64" in ../../01_src/01_rtl/biss_control.v(624)
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1032 : 2339/37 useful/useless nets, 2128/589 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1017 : Remove 3 const input seq instances
+SYN-1002 :     u4_emif_read/reg1_syn_2
+SYN-1002 :     u6_encoder/u2_biss/reg0_syn_10
+SYN-1002 :     u6_encoder/u2_biss/reg10_syn_2
+SYN-1019 : Optimized 48 mux instances.
+SYN-1021 : Optimized 20 onehot mux instances.
+SYN-1020 : Optimized 164 distributor mux.
+SYN-1001 : Optimize 2 less-than instances
+SYN-1019 : Optimized 7 mux instances.
+SYN-1016 : Merged 430 instances.
+SYN-1015 : Optimize round 1, 1316 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 6 inv instances.
+SYN-1032 : 1922/88 useful/useless nets, 1725/425 useful/useless insts
+SYN-1017 : Remove 3 const input seq instances
+SYN-1002 :     encoder_a_reg_reg
+SYN-1002 :     encoder_b_reg_reg
+SYN-1002 :     encoder_z_reg_reg
+SYN-1016 : Merged 3 instances.
+SYN-1015 : Optimize round 2, 524 better
+SYN-1032 : 1914/0 useful/useless nets, 1717/1 useful/useless insts
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3004 : Optimized 24 const0 DFF(s)
+SYN-1032 : 1838/76 useful/useless nets, 1666/25 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 3 better
+SYN-1014 : Optimize round 2
+SYN-1015 : Optimize round 2, 0 better
+RUN-1003 : finish command "optimize_rtl" in  4.015936s wall, 3.062500s user + 0.953125s system = 4.015625s CPU (100.0%)
+
+RUN-1004 : used memory is 124 MB, reserved memory is 98 MB, peak memory is 126 MB
+RUN-1002 : start command "report_area -file demo_1st_rtl.area"
+RUN-1001 : standard
+***Report Model: demo_1st_top Device: EG4X20BG256***
+
+IO Statistics
+#IO                        50
+  #input                   27
+  #output                   4
+  #inout                   19
+
+Gate Statistics
+#Basic gates              987
+  #and                    307
+  #nand                     0
+  #or                      68
+  #nor                      0
+  #xor                      2
+  #xnor                     0
+  #buf                      0
+  #not                     70
+  #bufif1                  19
+  #MX21                    96
+  #FADD                     0
+  #DFF                    425
+  #LATCH                    0
+#MACRO_ADD                 17
+#MACRO_EQ                  65
+#MACRO_MUX                323
+#MACRO_OTHERS               1
+
+Report Hierarchy Area:
++--------------------------------------------------------+
+|Instance       |Module          |gates  |seq    |macros |
++--------------------------------------------------------+
+|top            |demo_1st_top    |562    |425    |83     |
+|  u1_pll       |my_pll          |0      |0      |1      |
+|  u2_op        |emif_signal_op  |3      |5      |3      |
+|  u2_setio     |emif_setio      |6      |9      |3      |
+|  u6_encoder   |encoder_control |519    |377    |71     |
+|    u2_biss    |biss_control    |295    |184    |49     |
+|    u3_control |ssi_control     |224    |176    |20     |
+|  u7_led       |led             |13     |32     |5      |
++--------------------------------------------------------+
+
+RUN-1002 : start command "export_db demo_1st_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "optimize_gate -maparea demo_1st_gate.area"
+RUN-1001 : Open license file D:/Chang/software/TD/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Gate Property
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :          Parameters         |  Settings  |  Default Values  |  Note  
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :         cascade_dsp         |    off     |       off        |        
+RUN-1001 :         cascade_eram        |    off     |       off        |        
+RUN-1001 :        gate_sim_model       |    off     |       off        |        
+RUN-1001 :        map_sim_model        |    off     |       off        |        
+RUN-1001 :         map_strategy        |     1      |        1         |        
+RUN-1001 :           opt_area          |   medium   |      medium      |        
+RUN-1001 :          opt_timing         |    auto    |       auto       |        
+RUN-1001 :         pack_effort         |   medium   |      medium      |        
+RUN-1001 :      pack_lslice_ripple     |     on     |        on        |        
+RUN-1001 :   pack_lslice_ripple_ratio  |    0.5     |       0.5        |        
+RUN-1001 :        pack_seq_in_io       |    auto    |       auto       |        
+RUN-1001 :        ph1_mux_ratio        |    1.0     |       1.0        |        
+RUN-1001 :            report           |  standard  |     standard     |        
+RUN-1001 :           retiming          |    off     |       off        |        
+RUN-1001 : ------------------------------------------------------------------
+SYN-2001 : Map 50 IOs to PADs
+SYN-1032 : 1845/21 useful/useless nets, 1670/24 useful/useless insts
+RUN-1002 : start command "update_pll_param -module demo_1st_top"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-1001 : Throwback 43 control mux instances
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 601 instances.
+SYN-2501 : Optimize round 1, 1508 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 17 macro adder
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 127 instances into 1 LUTs, name keeping = 100%.
+SYN-1019 : Optimized 1600 mux instances.
+SYN-1016 : Merged 1962 instances.
+SYN-1032 : 2835/13 useful/useless nets, 2661/5 useful/useless insts
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 469 (3.71), #lev = 5 (2.79)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 467 (3.78), #lev = 4 (2.90)
+SYN-3001 : Logic optimization runtime opt =   0.11 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 1666 instances into 468 LUTs, name keeping = 72%.
+RUN-1002 : start command "report_area -file demo_1st_gate.area"
+RUN-1001 : standard
+***Report Model: demo_1st_top Device: EG4X20BG256***
+
+IO Statistics
+#IO                        50
+  #input                   27
+  #output                   4
+  #inout                   19
+
+LUT Statistics
+#Total_luts               740
+  #lut4                   374
+  #lut5                    94
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b             272
+
+Utilization Statistics
+#lut                      740   out of  19600    3.78%
+#reg                      420   out of  19600    2.14%
+#le                         0
+#dsp                        0   out of     29    0.00%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       28   out of    188   14.89%
+  #ireg                     3
+  #oreg                     4
+  #treg                    19
+#pll                        1   out of      4   25.00%
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------+
+|Instance       |Module          |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------+
+|top            |demo_1st_top    |468     |272     |446     |0       |0       |
+|  u1_pll       |my_pll          |1       |0       |0       |0       |0       |
+|  u2_op        |emif_signal_op  |7       |0       |5       |0       |0       |
+|  u2_setio     |emif_setio      |10      |0       |8       |0       |0       |
+|  u6_encoder   |encoder_control |398     |177     |375     |0       |0       |
+|    u2_biss    |biss_control    |188     |42      |183     |0       |0       |
+|    u3_control |ssi_control     |199     |118     |175     |0       |0       |
+|  u7_led       |led             |51      |29      |32      |0       |0       |
++-----------------------------------------------------------------------------+
+
+SYN-1001 : Packing model "demo_1st_top" ...
+SYN-4010 : Pack lib has 58 rtl pack models with 25 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 420 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 5 carry chain into lslice
+SYN-4007 : Packing 107 adder to BLE ...
+SYN-4008 : Packed 107 adder and 25 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+RUN-1003 : finish command "optimize_gate -maparea demo_1st_gate.area" in  1.649565s wall, 1.500000s user + 0.156250s system = 1.656250s CPU (100.4%)
+
+RUN-1004 : used memory is 126 MB, reserved memory is 97 MB, peak memory is 146 MB
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model demo_1st_top
+RUN-1002 : start command "export_db demo_1st_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "backup_run_log run.log ../.logs/syn_1/td_20241218_112308.log"
