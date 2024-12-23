@@ -22,7 +22,6 @@ module encoder_control(
   input           clk_5M,         // 5MHz clk    
   input           rst_n,          // reset    
 // signal input
-  input     [3:0] key,            // key in    
   input           data_a_in,      // encoder data in a
   input           data_b_in,      // encoder data in b
   input           data_z_in,      // encoder data in z
@@ -43,57 +42,67 @@ module encoder_control(
 // parameter define
 parameter CNT_FREQ = 16'd5000;
 // wire define
-wire [31:0] abz_data;
+wire signed [31:0] abz_data;
+wire        biss_clk;
+wire [25:0] biss_data;
+wire  [5:0] crc_data;
+wire  [1:0] err_data;
+wire        ssi_clk;
+wire [31:0] ssi_data;
+wire [31:0] sincos_data;
+wire        tawa_a_out;
+wire [31:0] tawa_data;
+wire        tawa_data_out;
+wire        endat_clk;
+wire        endat_clk_en;
+wire        endat_data_en;
+wire        endat_data_out;
+wire [31:0] endat_data;
 wire        data_req;    // encoder data acq flag
 // reg define
-reg data_a_out_reg;
-reg data_b_out_reg;
-reg data_z_out_reg;
-reg a_out_reg;
-reg b_out_reg;
-reg z_out_reg;
-reg data_abz_a;
-reg data_abz_b;
-reg data_biss_a;
-reg data_ssi_a;
-reg data_tawa_a;
-reg data_endat_a;
-
-reg data_req_reg;    // encoder data acq flag reg
-
+reg        data_a_out_reg;
+reg        data_b_out_reg;
+reg        data_z_out_reg;
+reg        a_out_reg;
+reg        b_out_reg;
+reg        z_out_reg;
+reg        data_abz_a;
+reg        data_abz_b;
+reg        data_biss_a;
+reg        data_ssi_a;
+reg        data_tawa_a;
+reg        data_endat_a;
+reg        data_req_reg;    // encoder data acq flag reg
 reg [15:0] timer_100M;
-
-reg rst_n0, rst_n1;    // rst_n reg
-
 reg [31:0] data_out_reg;
 // assign define
 assign data_a_out = data_a_out_reg;
 assign data_b_out = data_b_out_reg;
 assign data_z_out = data_z_out_reg;
-assign a_out = a_out_reg;
-assign b_out = b_out_reg;
-assign z_out = z_out_reg;
-assign data_req = data_req_reg;
-assign data_out = data_out_reg;
+assign      a_out = a_out_reg;
+assign      b_out = b_out_reg;
+assign      z_out = z_out_reg;
+assign   data_req = data_req_reg;
+assign   data_out = data_out_reg;
 
 //////////////////////////////////////////////////////////////////////////////////
 //                              ABZ encoder
 //////////////////////////////////////////////////////////////////////////////////
 four_sub u10_abz(
 // sys input
-.clk          (clk_100M),    // 100MHz clk
-.rst_n        (rst_n),       // reset
+.clk          (clk_100M),      // 100MHz clk
+.rst_n        (rst_n),         // reset
 // encoder input
-.ain          (data_abz_a),   // encoder data in a
-.bin          (data_abz_b),   // encoder data in b
-.zin          (1'b0),        // encoder data in z
+.ain          (data_abz_a),    // encoder data in a
+.bin          (data_abz_b),    // encoder data in b
+.zin          (data_z_in),     // encoder data in z
 // angle output
-  .sub_cnt    (abz_data[19:0])     // abz data out
+  .sub_cnt    (abz_data)       // abz data out
 );
 //////////////////////////////////////////////////////////////////////////////////
 //                              BiSS-C encoder
 //////////////////////////////////////////////////////////////////////////////////
-biss_control u11_biss(
+biss_controll u11_biss(
 // sys input
 .clk           (clk_200M),     // 200MHz clk
 .clk_5M        (clk_5M),       // 5MHz clk
@@ -105,7 +114,6 @@ biss_control u11_biss(
   .clk_out     (biss_clk),     // biss clk output
   .crc_data    (crc_data),     // biss crc data
   .err_data    (err_data),     // biss error data
-  .crc_err     (crc_err),      // crc calc error
   .data_out    (biss_data)     // biss angle data
 );
 //////////////////////////////////////////////////////////////////////////////////
@@ -113,14 +121,14 @@ biss_control u11_biss(
 //////////////////////////////////////////////////////////////////////////////////
 ssi_control u12_ssi(
 // sys input
-.clk         (clk_200M),     // 200MHz clock
-.rst_n       (rst_n0),        // reset
+.clk         (clk_200M),       // 200MHz clock
+.rst_n       (rst_n),          // reset
 // input
-.key         (data_req),     // data request
-.data_in     (data_ssi_a),    // ssi data input
+.key         (data_req),       // data request
+.data_in     (data_ssi_a),     // ssi data input
 // output
-.clk_out     (ssi_clk),      // ssi clock output
-.data_out    (ssi_data)      // ssi data output
+  .clk_out     (ssi_clk),      // ssi clock output
+  .data_out    (ssi_data)      // ssi data output
 );
 //////////////////////////////////////////////////////////////////////////////////
 //                               sincos encoder
@@ -128,7 +136,8 @@ ssi_control u12_ssi(
 sin_control u13_sin(
 // sys input
 .clk              (clk_200M),       // 100MHz clk
-.rst_n            (rst_n0),          // reset
+.clk_5M           (clk_5M),         // 5MHz clk
+.rst_n            (rst_n),          // reset
 // encoder in
 .sdo_a            (sdo_a),          // sin data in
 .sdo_b            (sdo_b),          // cos data in
@@ -144,7 +153,7 @@ sin_control u13_sin(
 tawa_control u14_tawa(
 // / sys input
 .clk           (clk_100M),         // 100MHz clk
-.rst_n         (rst_n1),            // reset
+.rst_n         (rst_n),            // reset
 // input signals
 .key           (data_req),         // data acquire trigger
 .data_in       (data_tawa_a),        // encoder data in
@@ -159,7 +168,7 @@ tawa_control u14_tawa(
 endat_control u15_endat(
 // sys input
 .clk           (clk_200M),          // 200MHz clk
-.rst_n         (rst_n1),            // reset
+.rst_n         (rst_n),            // reset
 // input signals
 .key           (data_req),          // data acquire trigger
 .rx_data       (data_endat_a),         // endata data in
@@ -190,7 +199,7 @@ end
 //////////////////////////////////////////////////////////////////////////////////
 //                           encoder mode select
 //////////////////////////////////////////////////////////////////////////////////
-always @(posedge clk_200M or negedge rst_n)begin
+always @(posedge clk_100M or negedge rst_n)begin
   if(~rst_n) begin
     data_a_out_reg <= 1'b0;
     data_b_out_reg <= 1'b0;
@@ -262,21 +271,7 @@ always @(posedge clk_200M or negedge rst_n)begin
     data_endat_a <= 1'b0;
   end
 end
-//////////////////////////////////////////////////////////////////////////////////
-//                           reset signal high fanout
-//////////////////////////////////////////////////////////////////////////////////
-always @(posedge clk_100M) begin
-  if(~rst_n) begin
-    rst_n0 <= 1'b0;
-    rst_n1 <= 1'b0;
-  end
-  else begin
-    rst_n0 <= rst_n;
-    rst_n1 <= rst_n0;
-  end
-end
 
 // biss-c 角度数据30kHz(20KHz)，33330ns(50000ns)，100MHz时钟计数3333次(5000次)，CNT_FREQ=3333
-
 
 endmodule

@@ -18,6 +18,7 @@
 module sin_control(
 // sys input
   input           clk,            // 200MHz clock
+  input           clk_5M,         // 5MHz clock
   input           rst_n,          // reset
 // encoder in
   input           sdo_a,          // adc data input sin
@@ -59,7 +60,7 @@ ads8350_sample u21_sample(
 //////////////////////////////////////////////////////////////////////////////////
 fir u22_fir(
 // sys input
-.clk          (clk),           // 200MHz clock
+.clk          (clk_5M),        // 5MHz clock
 .rst_n        (rst_n),         // reset
 // input signal
 .clk_en       (conv_done),     // adc data ready

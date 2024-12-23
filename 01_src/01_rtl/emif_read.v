@@ -34,10 +34,31 @@ reg        read_done_reg;       // read done reg
 reg [15:0] fpga_read_reg;       // FPGA read data reg
 reg  [3:0] cnt_en;              // read start cnt
 reg [15:0] mcu_data [7:0];      // restore data from emif
+reg [12:0] emif_addr_reg0;
+reg [12:0] emif_addr_reg1;
+reg [15:0] data_in_reg0;
+reg [15:0] data_in_reg1;
 /**********  assign define  ***********/
 assign encoder_mode = encoder_mode_reg;
 assign fpga_read = fpga_read_reg;
 assign read_done = read_done_reg;
+//////////////////////////////////////////////////////////////////////////////////
+//                             fpga catch module
+//////////////////////////////////////////////////////////////////////////////////
+always @(posedge clk or negedge rst_n) begin
+  if(~rst_n) begin
+    emif_addr_reg0 <= 13'd0;
+    emif_addr_reg1 <= 13'd0;
+    data_in_reg0 <= 16'd0;
+    data_in_reg1 <= 16'd0;
+  end
+  else begin
+    emif_addr_reg0 <= emif_addr;
+    emif_addr_reg1 <= emif_addr_reg0;
+    data_in_reg0   <= data_in;
+    data_in_reg1   <= data_in_reg0;
+  end
+end
 //////////////////////////////////////////////////////////////////////////////////
 //                             fpga read module
 //////////////////////////////////////////////////////////////////////////////////
@@ -52,7 +73,7 @@ always @(posedge clk or negedge rst_n) begin
     cnt_en        <= cnt_en + 1'b1;
   end
   else if( read_en && cnt_en == 4'd5 ) begin
-    fpga_read_reg <= data_in;
+    fpga_read_reg <= data_in_reg1;
     cnt_en        <= cnt_en + 1'b1;
     read_done_reg <= 1'b1;
   end
@@ -84,7 +105,7 @@ always @(posedge clk or negedge rst_n) begin
   end
 // data input in addr
   else if( read_done ) begin
-    mcu_data[emif_addr] <= fpga_read;
+    mcu_data[emif_addr_reg1] <= fpga_read_reg;
   end
   else begin
     mcu_data[0] <= mcu_data[0];
@@ -102,7 +123,7 @@ end
 //////////////////////////////////////////////////////////////////////////////////
 always @(posedge clk or negedge rst_n) begin
   if(~rst_n) begin
-    encoder_mode_reg <= 5'd0;
+    encoder_mode_reg <= 5'b00_000;
   end
 // defualt 
   else begin

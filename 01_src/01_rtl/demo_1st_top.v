@@ -42,12 +42,15 @@ module demo_1st_top(
     inout        encoder_b,       // encoder b
     inout        encoder_z,       // encoder z
 // peripherals interface
-  input [3:0]    key_in,          // key
     output [3:0] led_out          // led
 );
 // parameter define
 
 // wire define
+wire        clk_400M;
+wire        clk_200M;
+wire        clk_100M;
+wire        clk_5M;
 wire        locked;           // pll has locked fer clock/high active
 wire        rst_n;            // global reset
 wire        emif_clk;         // EMIF clock sync
@@ -80,7 +83,6 @@ reg         encoder_a_reg;    // encoder a reg when output
 reg         encoder_b_reg;    // encoder b reg when output
 reg         encoder_z_reg;    // encoder z reg when output
 // assign define
-assign rst_n = sys_rst_n_in & locked;
 assign emif_data = emif_data_reg;
 assign encoder_a = encoder_a_reg;
 assign encoder_b = encoder_b_reg;
@@ -104,9 +106,18 @@ my_pll u1_pll(
   .clk3_out    (clk_5M)            // output clock
 );
 //////////////////////////////////////////////////////////////////////////////////
+//                                rst_n BUFG
+//////////////////////////////////////////////////////////////////////////////////
+rst_BUFG u2_rst(
+// input ports
+.i(sys_rst_n_in),    // input reset
+// output ports
+  .o(rst_n)          // output reset,solve rst_n high fanout issue
+);
+//////////////////////////////////////////////////////////////////////////////////
 //                      EMIF signal processing module
 //////////////////////////////////////////////////////////////////////////////////
-emif_signal_op u2_op(
+emif_signal_op u3_op(
 // sys interface
 .clk           (clk_200M),         // 200MHz sys clk
 .rst_n         (rst_n),            // reset
@@ -131,7 +142,7 @@ emif_signal_op u2_op(
 //////////////////////////////////////////////////////////////////////////////////
 //                      EMIF data set in/out module
 //////////////////////////////////////////////////////////////////////////////////
-emif_setio u3_setio(
+emif_setio u4_setio(
 // sys interface
 .clk         (clk_400M),         // 400MHz sys clk
 .rst_n       (rst_n),            // reset
@@ -144,7 +155,7 @@ emif_setio u3_setio(
 //////////////////////////////////////////////////////////////////////////////////
 //                          EMIF control module
 //////////////////////////////////////////////////////////////////////////////////
-emif_control u4_control(
+emif_control u5_control(
 // sys interface
 .clk             (clk_200M),          // 200MHz sys clk
 .rst_n           (rst_n),             // reset
@@ -168,14 +179,14 @@ emif_control u4_control(
 //////////////////////////////////////////////////////////////////////////////////
 //                             EMIF fpga read module
 //////////////////////////////////////////////////////////////////////////////////
-emif_read u5_emif_read(
+emif_read u6_emif_read(
 // sys signal
 .clk               (clk_200M),         // 200MHz sys clk
 .rst_n             (rst_n),            // reset
 // input signal
-.read_en           (~we_logic),        // EMIF we logic
-.emif_addr         (emif_col_addr),    // EMIF address
-.data_in           (emif_data_in),     // EMIF data in
+.read_en           (~emif_we_logic),        // EMIF we logic
+.emif_addr         (emif_addr_in),    // EMIF address
+.data_in           (emif_data),     // EMIF data in
 //output signal
   .encoder_mode    (encoder_mode),     // encoder mode
   .read_done       (read_done),        // read done reg
@@ -184,12 +195,12 @@ emif_read u5_emif_read(
 //////////////////////////////////////////////////////////////////////////////////
 //                             EMIF fpga write module
 //////////////////////////////////////////////////////////////////////////////////
-emif_write u6_emif_write(
+emif_write u7_emif_write(
 // sys signal
 .clk               (clk_200M),         // 200MHz
 .rst_n             (rst_n),            // reset
 // input signal
-.write_en          (we_logic),         // FPGA w enable
+.write_en          (emif_we_logic),         // FPGA w enable
 .emif_addr         (emif_col_addr),    // emif_addr
 .encoder_data      (encoder_data),     // encoder data
 //output signal
@@ -198,14 +209,13 @@ emif_write u6_emif_write(
 //////////////////////////////////////////////////////////////////////////////////
 //                             encoder module
 //////////////////////////////////////////////////////////////////////////////////
-encoder_control u7_encoder(
+encoder_control u8_encoder(
 // sys interface
 .clk_200M        (clk_200M),      // 200MHz sys clk
 .clk_100M        (clk_100M),      // 100MHz
 .clk_5M          (clk_5M),        // 5MHz
 .rst_n           (rst_n),         // reset
 // signal input
-.key             (key_in),        // encoder data acquired flag
 .data_a_in       (encoder_a),     // encoder a data to fpga
 .data_b_in       (encoder_b),     // encoder b data to fpga
 .data_z_in       (encoder_z),     // encoder z data to fpga
@@ -226,7 +236,7 @@ encoder_control u7_encoder(
 //////////////////////////////////////////////////////////////////////////////////
 //                              led module
 //////////////////////////////////////////////////////////////////////////////////
-led u8_led(
+led u9_led(
 // sys input  
 .clk      (clk_100M),    // 100MHz sys clk
 .rst_n    (rst_n),       // reset

@@ -40,10 +40,6 @@ set_pin_assignment	{ emif_we_in }	{ LOCATION = C11; IOSTANDARD = LVCMOS25; PULLT
 set_pin_assignment	{ encoder_a }	{ LOCATION = F7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
 set_pin_assignment	{ encoder_b }	{ LOCATION = E6; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
 set_pin_assignment	{ encoder_z }	{ LOCATION = C7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
-set_pin_assignment	{ key_in[0] }	{ LOCATION = M3; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
-set_pin_assignment	{ key_in[1] }	{ LOCATION = M4; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
-set_pin_assignment	{ key_in[2] }	{ LOCATION = B1; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
-set_pin_assignment	{ key_in[3] }	{ LOCATION = B2; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
 set_pin_assignment	{ led_out[0] }	{ LOCATION = A8; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
 set_pin_assignment	{ led_out[1] }	{ LOCATION = A9; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
 set_pin_assignment	{ led_out[2] }	{ LOCATION = A10; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
@@ -55,6 +51,7 @@ set_pin_assignment	{ sincos_cs_n }	{ LOCATION = C4; IOSTANDARD = LVCMOS25; DRIVE
 set_pin_assignment	{ sys_clk_in }	{ LOCATION = J16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
 set_pin_assignment	{ sys_rst_n_in }	{ LOCATION = A6; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; }
 set_pin_assignment	{ z_out_able }	{ LOCATION = A7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+
 
 
 

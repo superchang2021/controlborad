@@ -2,31 +2,31 @@ standard
 ***Report Model: demo_1st_top Device: EG4X20BG256***
 
 IO Statistics
-#IO                        57
-  #input                   29
+#IO                        53
+  #input                   25
   #output                   9
   #inout                   19
 
 LUT Statistics
-#Total_luts               642
-  #lut4                   333
-  #lut5                    40
+#Total_luts              6699
+  #lut4                  1034
+  #lut5                   236
   #lut6                     0
   #lut5_mx41                0
-  #lut4_alu1b             269
+  #lut4_alu1b            5429
 
 Utilization Statistics
-#lut                      642   out of  19600    3.28%
-#reg                      282   out of  19600    1.44%
+#lut                     6699   out of  19600   34.18%
+#reg                     1991   out of  19600   10.16%
 #le                         0
-#dsp                        0   out of     29    0.00%
+#dsp                       29   out of     29  100.00%
 #bram                       0   out of     64    0.00%
   #bram9k                   0
   #fifo9k                   0
 #bram32k                    0   out of     16    0.00%
-#pad                       57   out of    188   30.32%
-  #ireg                     1
-  #oreg                     6
+#pad                       53   out of    188   28.19%
+  #ireg                    23
+  #oreg                    26
   #treg                    19
 #pll                        1   out of      4   25.00%
 
@@ -34,18 +34,31 @@ Report Hierarchy Area:
 +-----------------------------------------------------------------------------------------+
 |Instance               |Module              |lut     |ripple  |seq     |bram    |dsp     |
 +-----------------------------------------------------------------------------------------+
-|top                    |demo_1st_top        |373     |269     |308     |0       |0       |
+|top                    |demo_1st_top        |1270    |5429    |2059    |0       |29      |
 |  u1_pll               |my_pll              |1       |0       |0       |0       |0       |
-|  u2_op                |emif_signal_op      |7       |0       |5       |0       |0       |
-|  u3_setio             |emif_setio          |11      |0       |8       |0       |0       |
-|  u7_encoder           |encoder_control     |304     |240     |237     |0       |0       |
-|    u13_sin            |sin_control         |45      |9       |13      |0       |0       |
-|      u21_sample       |ads8350_sample      |45      |9       |13      |0       |0       |
-|    u14_tawa           |tawa_control        |0       |0       |0       |0       |0       |
-|      u31_uart_control |uart_control        |0       |0       |0       |0       |0       |
-|      u33_uart_send    |uart_send           |0       |0       |0       |0       |0       |
-|      u34_crc          |crc_calc            |0       |0       |0       |0       |0       |
-|    u15_endat          |endat_control       |246     |214     |205     |0       |0       |
-|      u41_control      |endat_contol_sample |246     |214     |205     |0       |0       |
-|  u8_led               |led                 |50      |29      |32      |0       |0       |
+|  u2_rst               |rst_BUFG            |0       |0       |0       |0       |0       |
+|  u3_op                |emif_signal_op      |7       |0       |7       |0       |0       |
+|  u4_setio             |emif_setio          |11      |0       |9       |0       |0       |
+|  u5_control           |emif_control        |1       |0       |0       |0       |0       |
+|  u6_emif_read         |emif_read           |20      |0       |50      |0       |0       |
+|  u7_emif_write        |emif_write          |38      |0       |16      |0       |0       |
+|  u8_encoder           |encoder_control     |1155    |3985    |1877    |0       |29      |
+|    u10_abz            |four_sub            |51      |79      |40      |0       |0       |
+|    u11_biss           |biss_controll       |214     |81      |141     |0       |0       |
+|      U2_control       |biss_control_in     |136     |56      |91      |0       |0       |
+|      U3_CRC           |biss_crc6           |78      |25      |50      |0       |0       |
+|    u12_ssi            |ssi_control         |94      |27      |100     |0       |0       |
+|    u13_sin            |sin_control         |81      |3560    |1137    |0       |29      |
+|      u21_sample       |ads8350_sample      |81      |18      |81      |0       |0       |
+|      u22_fir          |fir                 |0       |3542    |1056    |0       |29      |
+|        U1_fir         |filter_verilog      |0       |1493    |528     |0       |19      |
+|        U2_fir         |filter_verilog      |0       |2049    |528     |0       |10      |
+|    u14_tawa           |tawa_control        |291     |40      |193     |0       |0       |
+|      u31_uart_control |uart_control        |199     |18      |131     |0       |0       |
+|      u32_uart_recv    |uart_recv           |38      |7       |32      |0       |0       |
+|      u33_uart_send    |uart_send           |30      |15      |22      |0       |0       |
+|      u34_crc          |crc_calc            |24      |0       |8       |0       |0       |
+|    u15_endat          |endat_control       |245     |181     |207     |0       |0       |
+|      u41_control      |endat_contol_sample |245     |181     |207     |0       |0       |
+|  u9_led               |led                 |35      |29      |32      |0       |0       |
 +-----------------------------------------------------------------------------------------+

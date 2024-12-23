@@ -45,6 +45,8 @@ always @(posedge clk or negedge rst_n) begin
   if(~rst_n) begin
     ain1    <= 1'b1;
     bin1    <= 1'b1;
+    zin1    <= 1'b1;
+    zin2    <= 1'b1;
     cur     <= 2'b11;
     pre     <= 2'b11;
     forward <= 1'b1;

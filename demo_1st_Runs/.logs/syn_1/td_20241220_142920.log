@@ -1,0 +1,706 @@
+============================================================
+   Tang Dynasty, V5.6.71036
+      Copyright (c) 2012-2023 Anlogic Inc.
+   Executable = D:/Chang/software/TD/bin/td.exe
+   Built at =   20:34:38 Mar 21 2023
+   Run by =     Admin
+   Run Date =   Fri Dec 20 14:29:20 2024
+
+   Run on =     DZ-CHANGRENWEI
+============================================================
+RUN-1002 : start command "open_project demo_1st.prj"
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../01_src/03_ip/my_pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../01_src/03_ip/my_pll.v(92)
+HDL-1007 : analyze verilog file ../../01_src/03_ip/rst_BUFG.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/demo_1st_top.v
+HDL-1007 : undeclared symbol 'clk_400M', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(100)
+HDL-1007 : undeclared symbol 'clk_200M', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(101)
+HDL-1007 : undeclared symbol 'clk_100M', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(102)
+HDL-1007 : undeclared symbol 'clk_5M', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(103)
+HDL-1007 : undeclared symbol 'we_logic', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(184)
+HDL-1007 : undeclared symbol 'emif_data_in', assumed default net type 'wire' in ../../01_src/01_rtl/demo_1st_top.v(186)
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/emif_signal_op.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/emif_setio.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/led.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/emif_control.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/emif_read.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/emif_write.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/encoder_control.v
+HDL-1007 : undeclared symbol 'biss_clk', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(100)
+HDL-1007 : undeclared symbol 'crc_data', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(101)
+HDL-1007 : undeclared symbol 'err_data', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(102)
+HDL-1007 : undeclared symbol 'crc_err', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(103)
+HDL-1007 : undeclared symbol 'biss_data', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(104)
+HDL-1007 : undeclared symbol 'ssi_clk', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(117)
+HDL-1007 : undeclared symbol 'ssi_data', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(118)
+HDL-1007 : undeclared symbol 'sincos_data', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(134)
+HDL-1007 : undeclared symbol 'tawa_a_out', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(147)
+HDL-1007 : undeclared symbol 'tawa_data_out', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(148)
+HDL-1007 : undeclared symbol 'tawa_data', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(149)
+HDL-1007 : undeclared symbol 'endat_clk', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(162)
+HDL-1007 : undeclared symbol 'endat_clk_en', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(163)
+HDL-1007 : undeclared symbol 'endat_data_en', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(164)
+HDL-1007 : undeclared symbol 'endat_data_out', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(165)
+HDL-1007 : undeclared symbol 'endat_data', assumed default net type 'wire' in ../../01_src/01_rtl/encoder_control.v(166)
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/four_sub.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/biss_control.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/ssi_control.v
+HDL-1007 : undeclared symbol 'DATA2STOP_start', assumed default net type 'wire' in ../../01_src/01_rtl/ssi_control.v(66)
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/sin_control.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/ads8350_sample.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/fir.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/filter_verilog.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/tawa_control.v
+HDL-1007 : undeclared symbol 'clk_100M', assumed default net type 'wire' in ../../01_src/01_rtl/tawa_control.v(51)
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/crc_calc.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/uart_control.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/uart_recv.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/uart_send.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/endat_contol.v
+HDL-1007 : analyze verilog file ../../01_src/01_rtl/endat_control_smaple.v
+RUN-1001 : Project manager successfully analyzed 24 source files.
+RUN-1002 : start command "import_device eagle_20.db -package EG4X20BG256"
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/M14  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "elaborate -top demo_1st_top"
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :   default_reg_initial   |    auto    |       auto       |        
+RUN-1001 :        infer_add        |     on     |        on        |        
+RUN-1001 :        infer_fsm        |    off     |       off        |        
+RUN-1001 :        infer_mult       |     on     |        on        |        
+RUN-1001 :        infer_ram        |     on     |        on        |        
+RUN-1001 :        infer_reg        |     on     |        on        |        
+RUN-1001 :   infer_reg_init_value  |     on     |        on        |        
+RUN-1001 :        infer_rom        |     on     |        on        |        
+RUN-1001 :      infer_shifter      |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+HDL-1007 : elaborate module demo_1st_top in ../../01_src/01_rtl/demo_1st_top.v(18)
+HDL-1007 : elaborate module my_pll in ../../01_src/03_ip/my_pll.v(25)
+HDL-1007 : elaborate module EG_LOGIC_BUFG in D:/Chang/software/TD/arch/eagle_macro.v(8)
+HDL-1007 : elaborate module EG_PHY_PLL(FIN="50.000",FBCLK_DIV=8,CLKC1_DIV=2,CLKC2_DIV=4,CLKC3_DIV=80,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",CLKC3_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC2_CPHASE=3,CLKC3_CPHASE=79,GMC_GAIN=4,ICP_CURRENT=13,KVCO=4,LPF_CAPACITOR=1,LPF_RESISTOR=4,SYNC_ENABLE="DISABLE") in D:/Chang/software/TD/arch/eagle_macro.v(930)
+HDL-1007 : elaborate module rst_BUFG in ../../01_src/03_ip/rst_BUFG.v(14)
+HDL-1007 : elaborate module emif_signal_op in ../../01_src/01_rtl/emif_signal_op.v(18)
+HDL-1007 : elaborate module emif_setio in ../../01_src/01_rtl/emif_setio.v(18)
+HDL-1007 : elaborate module emif_control in ../../01_src/01_rtl/emif_control.v(18)
+HDL-1007 : elaborate module emif_read in ../../01_src/01_rtl/emif_read.v(18)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 16 for port 'data_in' in ../../01_src/01_rtl/demo_1st_top.v(186)
+HDL-1007 : elaborate module emif_write in ../../01_src/01_rtl/emif_write.v(18)
+HDL-1007 : elaborate module encoder_control in ../../01_src/01_rtl/encoder_control.v(18)
+HDL-1007 : elaborate module four_sub in ../../01_src/01_rtl/four_sub.v(18)
+HDL-5007 WARNING: actual bit length 20 differs from formal bit length 32 for port 'sub_cnt' in ../../01_src/01_rtl/encoder_control.v(86)
+HDL-1007 : elaborate module biss_control in ../../01_src/01_rtl/biss_control.v(18)
+HDL-5007 WARNING: net 'CRC_TABLE[64][31]' does not have a driver in ../../01_src/01_rtl/biss_control.v(84)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 6 for port 'crc_data' in ../../01_src/01_rtl/encoder_control.v(101)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 2 for port 'err_data' in ../../01_src/01_rtl/encoder_control.v(102)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 26 for port 'data_out' in ../../01_src/01_rtl/encoder_control.v(104)
+HDL-1007 : elaborate module ssi_control in ../../01_src/01_rtl/ssi_control.v(18)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 32 for port 'data_out' in ../../01_src/01_rtl/encoder_control.v(118)
+HDL-1007 : elaborate module sin_control in ../../01_src/01_rtl/sin_control.v(18)
+HDL-1007 : elaborate module ads8350_sample in ../../01_src/01_rtl/ads8350_sample.v(18)
+HDL-1007 : elaborate module fir in ../../01_src/01_rtl/fir.v(18)
+HDL-1007 : elaborate module filter_verilog in ../../01_src/01_rtl/filter_verilog.v(18)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 32 for port 'data_out' in ../../01_src/01_rtl/encoder_control.v(134)
+HDL-1007 : elaborate module tawa_control in ../../01_src/01_rtl/tawa_control.v(18)
+HDL-1007 : elaborate module uart_control in ../../01_src/01_rtl/uart_control.v(18)
+HDL-1007 : elaborate module uart_recv in ../../01_src/01_rtl/uart_recv.v(10)
+HDL-1007 : elaborate module uart_send in ../../01_src/01_rtl/uart_send.v(10)
+HDL-1007 : elaborate module crc_calc in ../../01_src/01_rtl/crc_calc.v(3)
+HDL-5007 WARNING: net 'clk_100M' does not have a driver in ../../01_src/01_rtl/tawa_control.v(51)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 32 for port 'data_out' in ../../01_src/01_rtl/encoder_control.v(149)
+HDL-1007 : elaborate module endat_control in ../../01_src/01_rtl/endat_contol.v(18)
+HDL-1007 : elaborate module endat_contol_sample in ../../01_src/01_rtl/endat_control_smaple.v(18)
+HDL-5007 WARNING: actual bit length 1 differs from formal bit length 32 for port 'data_out' in ../../01_src/01_rtl/encoder_control.v(166)
+HDL-5007 WARNING: net 'abz_data[31]' does not have a driver in ../../01_src/01_rtl/encoder_control.v(46)
+HDL-1007 : elaborate module led in ../../01_src/01_rtl/led.v(18)
+HDL-5007 WARNING: net 'we_logic' does not have a driver in ../../01_src/01_rtl/demo_1st_top.v(184)
+HDL-5007 WARNING: net 'emif_data_in' does not have a driver in ../../01_src/01_rtl/demo_1st_top.v(186)
+HDL-1200 : Current top model is demo_1st_top
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "export_db demo_1st_elaborate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "read_adc ../../01_src/04_pin/demo_1st.adc"
+RUN-1002 : start command "set_pin_assignment  a_out_able   LOCATION = B6; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  b_out_able   LOCATION = B3; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[0]   LOCATION = D14; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[10]   LOCATION = C16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[11]   LOCATION = C15; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[12]   LOCATION = D16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[1]   LOCATION = A14; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[2]   LOCATION = B15; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[3]   LOCATION = B16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[4]   LOCATION = E15; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[5]   LOCATION = E16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[6]   LOCATION = K15; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[7]   LOCATION = L16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[8]   LOCATION = F14; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_addr_in[9]   LOCATION = F13; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_cas_in   LOCATION = N12; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_ce_in   LOCATION = C13; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_cke_in   LOCATION = A13; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_clk_in   LOCATION = E13; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[0]   LOCATION = T13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[10]   LOCATION = M16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[11]   LOCATION = R16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[12]   LOCATION = P15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[13]   LOCATION = N16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[14]   LOCATION = P16; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[15]   LOCATION = M15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[1]   LOCATION = M13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[2]   LOCATION = R14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[3]   LOCATION = T14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[4]   LOCATION = L14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[5]   LOCATION = M14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[6]   LOCATION = R15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[7]   LOCATION = T15; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[8]   LOCATION = L13; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_data[9]   LOCATION = K14; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_dqm0_in   LOCATION = P11; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_dqm1_in   LOCATION = P12; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_ras_in   LOCATION = N14; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  emif_we_in   LOCATION = C11; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  encoder_a   LOCATION = F7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  encoder_b   LOCATION = E6; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  encoder_z   LOCATION = C7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  key_in[0]   LOCATION = M3; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  key_in[1]   LOCATION = M4; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  key_in[2]   LOCATION = B1; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  key_in[3]   LOCATION = B2; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  led_out[0]   LOCATION = A8; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  led_out[1]   LOCATION = A9; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  led_out[2]   LOCATION = A10; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  led_out[3]   LOCATION = A11; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  sdo_a   LOCATION = B5; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  sdo_b   LOCATION = A5; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  sincos_clk   LOCATION = A4; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  sincos_cs_n   LOCATION = C4; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  sys_clk_in   LOCATION = J16; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  sys_rst_n_in   LOCATION = A6; IOSTANDARD = LVCMOS25; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  z_out_able   LOCATION = A7; IOSTANDARD = LVCMOS25; DRIVESTRENGTH = 8; PULLTYPE = NONE; "
+RUN-1001 : Starting of IO setups legality check.
+RUN-1001 : Starting of IO setups legality check.
+RUN-1001 : Starting of IO vref setups legality check.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file D:/Chang/software/TD/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :        Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------------
+RUN-1001 :       compress_add      |   ripple   |      ripple      |        
+RUN-1001 :        elf_sload        |    off     |       off        |        
+RUN-1001 :       fix_undriven      |     0      |        0         |        
+RUN-1001 :         flatten         |    off     |       off        |        
+RUN-1001 :       gate_sharing      |     on     |        on        |        
+RUN-1001 :    hdl_warning_level    |   normal   |      normal      |        
+RUN-1001 :   impl_internal_tribuf  |     on     |        on        |        
+RUN-1001 :      impl_set_reset     |     on     |        on        |        
+RUN-1001 :        infer_gsr        |    off     |       off        |        
+RUN-1001 :      keep_hierarchy     |    auto    |       auto       |        
+RUN-1001 :        max_fanout       |    9999    |       9999       |        
+RUN-1001 :      max_oh2bin_len     |     10     |        10        |        
+RUN-1001 :       merge_equal       |     on     |        on        |        
+RUN-1001 :       merge_equiv       |     on     |        on        |        
+RUN-1001 :        merge_mux        |    off     |       off        |        
+RUN-1001 :     min_control_set     |     8      |        8         |        
+RUN-1001 :      min_ripple_len     |    auto    |       auto       |        
+RUN-1001 :       oh2bin_ratio      |    0.08    |       0.08       |        
+RUN-1001 :     opt_adder_fanout    |     on     |        on        |        
+RUN-1001 :        opt_arith        |     on     |        on        |        
+RUN-1001 :       opt_big_gate      |    off     |       off        |        
+RUN-1001 :        opt_const        |     on     |        on        |        
+RUN-1001 :      opt_const_mult     |     on     |        on        |        
+RUN-1001 :       opt_lessthan      |     on     |        on        |        
+RUN-1001 :         opt_mux         |    off     |       off        |        
+RUN-1001 :         opt_ram         |    high    |       high       |        
+RUN-1001 :      rtl_sim_model      |    off     |       off        |        
+RUN-1001 :         seq_syn         |     on     |        on        |        
+RUN-1001 : --------------------------------------------------------------
+SYN-1012 : SanityCheck: Model "demo_1st_top"
+SYN-1012 : SanityCheck: Model "my_pll"
+SYN-1012 : SanityCheck: Model "rst_BUFG"
+SYN-1012 : SanityCheck: Model "emif_signal_op"
+SYN-1012 : SanityCheck: Model "emif_setio"
+SYN-1012 : SanityCheck: Model "emif_control"
+SYN-1012 : SanityCheck: Model "emif_read"
+SYN-1012 : SanityCheck: Model "emif_write"
+SYN-1012 : SanityCheck: Model "encoder_control"
+SYN-1012 : SanityCheck: Model "four_sub"
+SYN-1012 : SanityCheck: Model "biss_control"
+SYN-1012 : SanityCheck: Model "ssi_control"
+SYN-1012 : SanityCheck: Model "sin_control"
+SYN-1012 : SanityCheck: Model "ads8350_sample"
+SYN-1012 : SanityCheck: Model "fir"
+SYN-1012 : SanityCheck: Model "filter_verilog"
+SYN-1012 : SanityCheck: Model "tawa_control"
+SYN-1012 : SanityCheck: Model "uart_control"
+SYN-1012 : SanityCheck: Model "uart_recv"
+SYN-1012 : SanityCheck: Model "uart_send"
+SYN-1012 : SanityCheck: Model "crc_calc"
+SYN-1012 : SanityCheck: Model "endat_control"
+SYN-1012 : SanityCheck: Model "endat_contol_sample"
+SYN-1012 : SanityCheck: Model "led"
+SYN-1043 : Mark rst_BUFG as IO macro for instance bufg
+SYN-1043 : Mark my_pll as IO macro for instance bufg_feedback
+SYN-1011 : Flatten model demo_1st_top
+SYN-1032 : 12932/11284 useful/useless nets, 6383/4923 useful/useless insts
+SYN-1016 : Merged 2026 instances.
+SYN-1032 : 8246/3101 useful/useless nets, 1911/443 useful/useless insts
+SYN-1016 : Merged 1266 instances.
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "we_logic" in ../../01_src/01_rtl/demo_1st_top.v(184)
+SYN-5014 WARNING: the net's pin: pin "I" in ../../01_src/01_rtl/demo_1st_top.v(184)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(41)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(41)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(41)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(41)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(41)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(41)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(41)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(41)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../01_src/01_rtl/emif_write.v(41)
+SYN-5014 Similar messages will be suppressed.
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u6_emif_read/data_in[0]" in ../../01_src/01_rtl/emif_read.v(25)
+SYN-5014 WARNING: the net's pin: pin "i1" in ../../01_src/01_rtl/emif_read.v(54)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u8_encoder/abz_data[20]" in ../../01_src/01_rtl/encoder_control.v(46)
+SYN-5014 WARNING: the net's pin: pin "i0" in ../../01_src/01_rtl/encoder_control.v(204)
+SYN-5013 WARNING: Undriven net: model "demo_1st_top" / net "u8_encoder/u14_tawa/u31_uart_control/clk" in ../../01_src/01_rtl/uart_control.v(20)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../01_src/01_rtl/uart_control.v(100)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../01_src/01_rtl/crc_calc.v(20)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../01_src/01_rtl/uart_control.v(142)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../01_src/01_rtl/uart_control.v(142)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../01_src/01_rtl/uart_control.v(142)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../01_src/01_rtl/uart_control.v(142)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../01_src/01_rtl/uart_control.v(142)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../01_src/01_rtl/uart_control.v(142)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../01_src/01_rtl/uart_control.v(142)
+SYN-5014 WARNING: the net's pin: pin "clk" in ../../01_src/01_rtl/uart_control.v(142)
+SYN-5014 Similar messages will be suppressed.
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1032 : 7235/555 useful/useless nets, 4919/1362 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1032 : 6383/852 useful/useless nets, 4919/0 useful/useless insts
+SYN-1017 : Remove 3 const input seq instances
+SYN-1002 :     u8_encoder/u14_tawa/u31_uart_control/reg3_syn_2
+SYN-1002 :     u8_encoder/u14_tawa/u31_uart_control/reg3_syn_3
+SYN-1002 :     u8_encoder/u15_endat/u41_control/reg9_syn_5
+SYN-1019 : Optimized 18 mux instances.
+SYN-1021 : Optimized 103 onehot mux instances.
+SYN-1020 : Optimized 338 distributor mux.
+SYN-1001 : Optimize 5 less-than instances
+SYN-1019 : Optimized 10 mux instances.
+SYN-1016 : Merged 1346 instances.
+SYN-1015 : Optimize round 1, 4899 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 4 inv instances.
+SYN-1032 : 2118/3159 useful/useless nets, 1979/2658 useful/useless insts
+SYN-1017 : Remove 6 const input seq instances
+SYN-1002 :     u6_emif_read/reg2_syn_10
+SYN-1002 :     u8_encoder/data_z_out_reg_reg
+SYN-1002 :     u8_encoder/z_out_reg_reg
+SYN-1002 :     u6_emif_read/reg3_syn_50
+SYN-1002 :     encoder_z_reg_reg
+SYN-1002 :     u6_emif_read/reg1_syn_2
+SYN-1019 : Optimized 7 mux instances.
+SYN-1016 : Merged 13 instances.
+SYN-1015 : Optimize round 2, 5738 better
+SYN-1032 : 1644/442 useful/useless nets, 1561/387 useful/useless insts
+SYN-3003 : Optimized 1 equivalent DFF(s)
+SYN-3004 : Optimized 1 const0 DFF(s)
+SYN-3004 : Optimized 6 const0 DFF(s)
+SYN-3004 : Optimized 17 const0 DFF(s)
+SYN-1032 : 1574/70 useful/useless nets, 1513/23 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1017 : Remove 1 const input seq instances
+SYN-1002 :     encoder_a_reg_reg_syn_2
+SYN-1016 : Merged 1 instances.
+SYN-1015 : Optimize round 1, 15 better
+SYN-1014 : Optimize round 2
+SYN-1015 : Optimize round 2, 0 better
+RUN-1003 : finish command "optimize_rtl" in  2.985138s wall, 1.781250s user + 1.203125s system = 2.984375s CPU (100.0%)
+
+RUN-1004 : used memory is 163 MB, reserved memory is 137 MB, peak memory is 168 MB
+RUN-1002 : start command "report_area -file demo_1st_rtl.area"
+RUN-1001 : standard
+***Report Model: demo_1st_top Device: EG4X20BG256***
+
+IO Statistics
+#IO                        57
+  #input                   29
+  #output                   9
+  #inout                   19
+
+Gate Statistics
+#Basic gates              771
+  #and                    162
+  #nand                     0
+  #or                     163
+  #nor                      0
+  #xor                      1
+  #xnor                     0
+  #buf                      0
+  #not                     36
+  #bufif1                  19
+  #MX21                   106
+  #FADD                     0
+  #DFF                    284
+  #LATCH                    0
+#MACRO_ADD                 16
+#MACRO_EQ                  99
+#MACRO_MUX                244
+#MACRO_OTHERS               2
+
+Report Hierarchy Area:
++--------------------------------------------------------------------+
+|Instance               |Module              |gates  |seq    |macros |
++--------------------------------------------------------------------+
+|top                    |demo_1st_top        |487    |284    |117    |
+|  u1_pll               |my_pll              |0      |0      |1      |
+|  u2_rst               |rst_BUFG            |0      |0      |1      |
+|  u3_op                |emif_signal_op      |3      |5      |3      |
+|  u4_setio             |emif_setio          |6      |9      |3      |
+|  u8_encoder           |encoder_control     |445    |236    |104    |
+|    u11_biss           |biss_control        |0      |2      |1      |
+|    u13_sin            |sin_control         |153    |14     |67     |
+|      u21_sample       |ads8350_sample      |153    |14     |67     |
+|    u14_tawa           |tawa_control        |0      |0      |0      |
+|      u31_uart_control |uart_control        |0      |0      |0      |
+|      u33_uart_send    |uart_send           |0      |0      |0      |
+|      u34_crc          |crc_calc            |0      |0      |0      |
+|    u15_endat          |endat_control       |292    |203    |34     |
+|      u41_control      |endat_contol_sample |292    |203    |34     |
+|  u9_led               |led                 |13     |32     |5      |
++--------------------------------------------------------------------+
+
+RUN-1002 : start command "export_db demo_1st_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "read_sdc ../../01_src/04_pin/demo_1st.sdc"
+RUN-1002 : start command "get_ports sys_clk_in"
+RUN-1002 : start command "create_clock -name sys_clk_50m -period 20 -waveform 0 10 "
+RUN-1102 : create_clock: clock name: sys_clk_50m, type: 0, period: 20000, rise: 0, fall: 10000.
+RUN-1002 : start command "derive_pll_clocks"
+USR-1002 : Gen clock cmd:  create_generated_clock -name {u1_pll/pll_inst.clkc[0]} -source [get_ports {sys_clk_in}] -master_clock {sys_clk_50m} -multiply_by 8.0000 [get_pins {u1_pll/pll_inst.clkc[0]}]
+RUN-1002 : start command "get_ports sys_clk_in"
+RUN-1002 : start command "get_pins u1_pll/pll_inst.clkc[0]"
+RUN-1002 : start command "create_generated_clock -name u1_pll/pll_inst.clkc[0] -source  -master_clock sys_clk_50m -multiply_by 8.0000 "
+USR-1002 : Gen clock cmd:  create_generated_clock -name {u1_pll/pll_inst.clkc[1]} -source [get_ports {sys_clk_in}] -master_clock {sys_clk_50m} -multiply_by 4.0000 [get_pins {u1_pll/pll_inst.clkc[1]}]
+RUN-1002 : start command "get_ports sys_clk_in"
+RUN-1002 : start command "get_pins u1_pll/pll_inst.clkc[1]"
+RUN-1002 : start command "create_generated_clock -name u1_pll/pll_inst.clkc[1] -source  -master_clock sys_clk_50m -multiply_by 4.0000 "
+USR-1002 : Gen clock cmd:  create_generated_clock -name {u1_pll/pll_inst.clkc[2]} -source [get_ports {sys_clk_in}] -master_clock {sys_clk_50m} -multiply_by 2.0000 [get_pins {u1_pll/pll_inst.clkc[2]}]
+RUN-1002 : start command "get_ports sys_clk_in"
+RUN-1002 : start command "get_pins u1_pll/pll_inst.clkc[2]"
+RUN-1002 : start command "create_generated_clock -name u1_pll/pll_inst.clkc[2] -source  -master_clock sys_clk_50m -multiply_by 2.0000 "
+RUN-1002 : start command "optimize_gate -maparea demo_1st_gate.area"
+RUN-1001 : Open license file D:/Chang/software/TD/license/Anlogic.lic
+RUN-1001 : Print Global Property
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :        Parameters        |  Settings  |  Default Values  |  Note  
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 :          message         |  standard  |     standard     |        
+RUN-1001 :   mixed_pack_place_flow  |     on     |        on        |        
+RUN-1001 :        qor_monitor       |    off     |       off        |        
+RUN-1001 :        syn_ip_flow       |    off     |       off        |        
+RUN-1001 :          thread          |    auto    |       auto       |        
+RUN-1001 : ---------------------------------------------------------------
+RUN-1001 : Print Gate Property
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :          Parameters         |  Settings  |  Default Values  |  Note  
+RUN-1001 : ------------------------------------------------------------------
+RUN-1001 :         cascade_dsp         |    off     |       off        |        
+RUN-1001 :         cascade_eram        |    off     |       off        |        
+RUN-1001 :        gate_sim_model       |    off     |       off        |        
+RUN-1001 :        map_sim_model        |    off     |       off        |        
+RUN-1001 :         map_strategy        |     1      |        1         |        
+RUN-1001 :           opt_area          |   medium   |      medium      |        
+RUN-1001 :          opt_timing         |    auto    |       auto       |        
+RUN-1001 :         pack_effort         |   medium   |      medium      |        
+RUN-1001 :      pack_lslice_ripple     |     on     |        on        |        
+RUN-1001 :   pack_lslice_ripple_ratio  |    0.5     |       0.5        |        
+RUN-1001 :        pack_seq_in_io       |    auto    |       auto       |        
+RUN-1001 :        ph1_mux_ratio        |    1.0     |       1.0        |        
+RUN-1001 :            report           |  standard  |     standard     |        
+RUN-1001 :           retiming          |    off     |       off        |        
+RUN-1001 : ------------------------------------------------------------------
+SYN-2001 : Map 57 IOs to PADs
+SYN-1032 : 1608/22 useful/useless nets, 1546/23 useful/useless insts
+RUN-1002 : start command "update_pll_param -module demo_1st_top"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 2 BUFG to GCLK
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1016 : Merged 6 instances.
+SYN-2571 : Optimize after map_dsp, round 1, 6 better
+SYN-2571 : Optimize after map_dsp, round 2
+SYN-2571 : Optimize after map_dsp, round 2, 0 better
+SYN-1001 : Throwback 4 control mux instances
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 701 instances.
+SYN-2501 : Optimize round 1, 1612 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 16 macro adder
+SYN-1016 : Merged 12 instances.
+SYN-1032 : 2293/5 useful/useless nets, 2232/1 useful/useless insts
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model demo_1st_top.
+TMR-2506 : Build timing graph completely. Port num: 24, tpin num: 6772, tnet num: 2293, tinst num: 2231, tnode num: 8193, tedge num: 9082.
+TMR-2508 : Levelizing timing graph completed, there are 71 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 2293 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 4 clocks from SDC.
+TMR-3004 : Map sdc constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 364 (3.75), #lev = 5 (2.68)
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=5, #lut = 364 (3.75), #lev = 5 (2.68)
+SYN-3001 : Logic optimization runtime opt =   0.08 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 1250 instances into 366 LUTs, name keeping = 69%.
+RUN-1002 : start command "report_area -file demo_1st_gate.area"
+RUN-1001 : standard
+***Report Model: demo_1st_top Device: EG4X20BG256***
+
+IO Statistics
+#IO                        57
+  #input                   29
+  #output                   9
+  #inout                   19
+
+LUT Statistics
+#Total_luts               635
+  #lut4                   327
+  #lut5                    39
+  #lut6                     0
+  #lut5_mx41                0
+  #lut4_alu1b             269
+
+Utilization Statistics
+#lut                      635   out of  19600    3.24%
+#reg                      280   out of  19600    1.43%
+#le                         0
+#dsp                        0   out of     29    0.00%
+#bram                       0   out of     64    0.00%
+  #bram9k                   0
+  #fifo9k                   0
+#bram32k                    0   out of     16    0.00%
+#pad                       57   out of    188   30.32%
+  #ireg                     1
+  #oreg                     6
+  #treg                    19
+#pll                        1   out of      4   25.00%
+
+Report Hierarchy Area:
++-----------------------------------------------------------------------------------------+
+|Instance               |Module              |lut     |ripple  |seq     |bram    |dsp     |
++-----------------------------------------------------------------------------------------+
+|top                    |demo_1st_top        |366     |269     |306     |0       |0       |
+|  u1_pll               |my_pll              |1       |0       |0       |0       |0       |
+|  u2_rst               |rst_BUFG            |0       |0       |0       |0       |0       |
+|  u3_op                |emif_signal_op      |7       |0       |5       |0       |0       |
+|  u4_setio             |emif_setio          |11      |0       |8       |0       |0       |
+|  u8_encoder           |encoder_control     |297     |240     |235     |0       |0       |
+|    u11_biss           |biss_control        |0       |0       |2       |0       |0       |
+|    u13_sin            |sin_control         |36      |9       |13      |0       |0       |
+|      u21_sample       |ads8350_sample      |36      |9       |13      |0       |0       |
+|    u14_tawa           |tawa_control        |0       |0       |0       |0       |0       |
+|      u31_uart_control |uart_control        |0       |0       |0       |0       |0       |
+|      u33_uart_send    |uart_send           |0       |0       |0       |0       |0       |
+|      u34_crc          |crc_calc            |0       |0       |0       |0       |0       |
+|    u15_endat          |endat_control       |250     |214     |203     |0       |0       |
+|      u41_control      |endat_contol_sample |250     |214     |203     |0       |0       |
+|  u9_led               |led                 |50      |29      |32      |0       |0       |
++-----------------------------------------------------------------------------------------+
+
+SYN-1001 : Packing model "demo_1st_top" ...
+SYN-4010 : Pack lib has 58 rtl pack models with 25 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 280 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 5 carry chain into lslice
+SYN-4007 : Packing 108 adder to BLE ...
+SYN-4008 : Packed 108 adder and 12 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model demo_1st_top
+RUN-1002 : start command "export_db demo_1st_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1002 : start command "backup_run_log run.log ../.logs/syn_1/td_20241220_142920.log"

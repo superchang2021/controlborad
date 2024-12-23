@@ -21,7 +21,7 @@ module ssi_control(
   input    key,                 // data request
   input    data_in,             // ssi data input
     output clk_out,             // ssi clk output
-    output [31:0] data_out      // ssi angle data output
+    output [22:0] data_out      // ssi angle data output
 );
 // parameter define  
 parameter     IDLE = 3'b001;    // state define

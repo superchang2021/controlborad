@@ -48,7 +48,7 @@ assign data_out = {crc_calc,angle_uart};
 //////////////////////////////////////////////////////////////////////////////////
 uart_control u31_uart_control(
 //system
-.clk             (clk_100M),         // clk 100MHz
+.clk             (clk),         // clk 100MHz
 .rst_n           (rst_n),            // resset
 //input
 .data_in         (uart_data_in),     // uart receive data
@@ -69,7 +69,7 @@ uart_control u31_uart_control(
 //////////////////////////////////////////////////////////////////////////////////
 uart_recv u32_uart_recv(
 //system
-.clk             (clk_100M),       // clk 100MHz
+.clk             (clk),       // clk 100MHz
 .rst_n           (rst_n),          // reset
 //input
 .uart_rxd        (data_in),        // encoder data in
@@ -82,7 +82,7 @@ uart_recv u32_uart_recv(
 //////////////////////////////////////////////////////////////////////////////////
 uart_send u33_uart_send(
 //system
-.clk            (clk_100M),         // clk 100MHz
+.clk            (clk),         // clk 100MHz
 .rst_n          (rst_n),            // reset
 //input
 .uart_data      (uart_data_out),    // data send to encoder
@@ -96,7 +96,7 @@ uart_send u33_uart_send(
 //////////////////////////////////////////////////////////////////////////////////
 crc_calc u34_crc(
 // sys input
-.clk           (clk_100M),     // clk 100MHz
+.clk           (clk),     // clk 100MHz
 .rst_n         (rst_n),        // reset
 // input data
 .angle_data    (angle_uart),   // 24bit angle data

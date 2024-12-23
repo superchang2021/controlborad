@@ -82,7 +82,7 @@
                     <Attr Name="CompileOrder" Val="10"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/biss_control.v">
+            <File Path="01_src/01_rtl/ssi_control.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -90,7 +90,7 @@
                     <Attr Name="CompileOrder" Val="11"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/ssi_control.v">
+            <File Path="01_src/01_rtl/sin_control.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -98,7 +98,7 @@
                     <Attr Name="CompileOrder" Val="12"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/sin_control.v">
+            <File Path="01_src/01_rtl/ads8350_sample.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -106,7 +106,7 @@
                     <Attr Name="CompileOrder" Val="13"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/ads8350_sample.v">
+            <File Path="01_src/01_rtl/fir.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -114,7 +114,7 @@
                     <Attr Name="CompileOrder" Val="14"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/fir.v">
+            <File Path="01_src/01_rtl/filter_verilog.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -122,7 +122,7 @@
                     <Attr Name="CompileOrder" Val="15"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/filter_verilog.v">
+            <File Path="01_src/01_rtl/tawa_control.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -130,7 +130,7 @@
                     <Attr Name="CompileOrder" Val="16"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/tawa_control.v">
+            <File Path="01_src/01_rtl/crc_calc.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -138,7 +138,7 @@
                     <Attr Name="CompileOrder" Val="17"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/crc_calc.v">
+            <File Path="01_src/01_rtl/uart_control.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -146,7 +146,7 @@
                     <Attr Name="CompileOrder" Val="18"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/uart_control.v">
+            <File Path="01_src/01_rtl/uart_recv.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -154,7 +154,7 @@
                     <Attr Name="CompileOrder" Val="19"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/uart_recv.v">
+            <File Path="01_src/01_rtl/uart_send.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -162,7 +162,7 @@
                     <Attr Name="CompileOrder" Val="20"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/uart_send.v">
+            <File Path="01_src/01_rtl/endat_contol.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -170,7 +170,7 @@
                     <Attr Name="CompileOrder" Val="21"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/endat_contol.v">
+            <File Path="01_src/01_rtl/endat_control_smaple.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
@@ -178,12 +178,28 @@
                     <Attr Name="CompileOrder" Val="22"/>
                 </FileInfo>
             </File>
-            <File Path="01_src/01_rtl/endat_control_smaple.v">
+            <File Path="01_src/01_rtl/biss_controll.v">
                 <FileInfo>
                     <Attr Name="UsedInSyn" Val="true"/>
                     <Attr Name="UsedInP&R" Val="true"/>
                     <Attr Name="BelongTo" Val="design_1"/>
-                    <Attr Name="CompileOrder" Val="23"/>
+                    <Attr Name="CompileOrder" Val="24"/>
+                </FileInfo>
+            </File>
+            <File Path="01_src/01_rtl/biss_control_in.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="25"/>
+                </FileInfo>
+            </File>
+            <File Path="01_src/01_rtl/biss_crc6.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="26"/>
                 </FileInfo>
             </File>
         </Verilog>
@@ -214,6 +230,14 @@
                     <Attr Name="UsedInP&R" Val="true"/>
                     <Attr Name="BelongTo" Val="design_1"/>
                     <Attr Name="CompileOrder" Val="2"/>
+                </FileInfo>
+            </File>
+            <File Path="01_src/03_ip/rst_BUFG.ipc">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="23"/>
                 </FileInfo>
             </File>
         </IP_FILE>
