@@ -1,6 +1,6 @@
 eagle_20
-13 1805 1003 1695 5272 2000030416 12 0
--0.426 0.041 demo_1st_top eagle_20 EG4X20BG256 Detail NA 17 5
+13 2015 603 1905 5260 2000028978 15 0
+-1.575 0.041 demo_1st_top eagle_20 EG4X20BG256 Detail NA 17 5
 clock: sys_clk_50m
 15 0 0 0
 
@@ -8,442 +8,477 @@ clock: u1_pll/pll_inst.clkc[0]
 23 144 48 2
 Setup check
 33 3
-Endpoint: u4_setio/reg0_syn_32
-33 0.037000 7 3
-Timing path: u4_setio/cnt_60ns_b[2]_syn_8.clk->u4_setio/reg0_syn_32
-u4_setio/cnt_60ns_b[2]_syn_8.clk
-u4_setio/reg0_syn_32
-35 0.037000 4.730000 4.693000 2 2
-u4_setio/cnt_60ns[1] u6_emif_read/reg3_syn_61.b[0]
-u4_setio/add0_syn_22 u4_setio/reg0_syn_32.a[1]
+Endpoint: u4_setio/reg0_syn_34
+33 -0.004000 7 3
+Timing path: u4_setio/reg0_syn_32.clk->u4_setio/reg0_syn_34
+u4_setio/reg0_syn_32.clk
+u4_setio/reg0_syn_34
+35 -0.004000 4.730000 4.734000 2 2
+u4_setio/cnt_60ns[1] u6_emif_read/reg4_syn_79.b[1]
+u4_setio/cnt_60ns_b2[2] u4_setio/reg0_syn_34.a[1]
 
-Timing path: u4_setio/reg0_syn_29.clk->u4_setio/reg0_syn_32
-u4_setio/reg0_syn_29.clk
-u4_setio/reg0_syn_32
-75 0.094000 4.730000 4.636000 2 2
-u4_setio/cnt_60ns[0] u6_emif_read/reg3_syn_61.d[0]
-u4_setio/add0_syn_22 u4_setio/reg0_syn_32.a[1]
-
-Timing path: u4_setio/cas_reg0_reg_syn_4.clk->u4_setio/reg0_syn_32
+Timing path: u4_setio/cas_reg0_reg_syn_4.clk->u4_setio/reg0_syn_34
 u4_setio/cas_reg0_reg_syn_4.clk
-u4_setio/reg0_syn_32
-115 0.193000 4.730000 4.537000 2 2
-u4_setio/cas_reg0 u4_setio/cas_reg1_reg_syn_5.d[1]
-u4_setio/cnt_60ns_b[4]_syn_2 u4_setio/reg0_syn_32.b[1]
+u4_setio/reg0_syn_34
+75 0.062000 4.730000 4.668000 2 2
+u4_setio/cas_reg1 u6_emif_read/reg4_syn_81.c[0]
+u4_setio/cnt_60ns_b[4]_syn_2 u4_setio/reg0_syn_34.b[1]
 
-
-Endpoint: emif_data[0]_syn_4
-155 0.126000 1 1
-Timing path: u4_setio/setout_reg_reg_syn_5.clk->emif_data[0]_syn_4
-u4_setio/setout_reg_reg_syn_5.clk
-emif_data[0]_syn_4
-157 0.126000 4.597000 4.471000 1 2
-u4_setio/setout_reg u4_setio/setout_reg_syn_23.d[0]
-u4_setio/setout_reg_syn_12 emif_data[0]_syn_4.ts
+Timing path: u4_setio/reg0_syn_34.clk->u4_setio/reg0_syn_34
+u4_setio/reg0_syn_34.clk
+u4_setio/reg0_syn_34
+115 0.120000 4.730000 4.610000 2 2
+u4_setio/cnt_60ns[2] u6_emif_read/reg4_syn_79.c[1]
+u4_setio/cnt_60ns_b2[2] u4_setio/reg0_syn_34.a[1]
 
 
 Endpoint: u4_setio/reg0_syn_29
-197 0.146000 7 3
-Timing path: u4_setio/cnt_60ns_b[2]_syn_8.clk->u4_setio/reg0_syn_29
-u4_setio/cnt_60ns_b[2]_syn_8.clk
+155 0.033000 7 3
+Timing path: u4_setio/reg0_syn_32.clk->u4_setio/reg0_syn_29
+u4_setio/reg0_syn_32.clk
 u4_setio/reg0_syn_29
-199 0.146000 4.794000 4.648000 2 2
-u4_setio/cnt_60ns[1] u4_setio/cnt_60ns_b[2]_syn_8.b[1]
-u4_setio/cnt_60ns_b[2]_syn_2 u4_setio/reg0_syn_29.a[1]
+157 0.033000 4.758000 4.725000 2 2
+u4_setio/cnt_60ns[1] u6_emif_read/reg4_syn_79.b[0]
+u4_setio/add0_syn_22 u4_setio/reg0_syn_29.a[1]
 
-Timing path: u4_setio/reg0_syn_29.clk->u4_setio/reg0_syn_29
-u4_setio/reg0_syn_29.clk
+Timing path: u4_setio/reg0_syn_34.clk->u4_setio/reg0_syn_29
+u4_setio/reg0_syn_34.clk
 u4_setio/reg0_syn_29
-239 0.152000 4.794000 4.642000 2 2
-u4_setio/cnt_60ns[2] u4_setio/cnt_60ns_b[2]_syn_8.c[1]
-u4_setio/cnt_60ns_b[2]_syn_2 u4_setio/reg0_syn_29.a[1]
+197 0.065000 4.758000 4.693000 2 2
+u4_setio/cnt_60ns[2] u6_emif_read/reg4_syn_79.c[0]
+u4_setio/add0_syn_22 u4_setio/reg0_syn_29.a[1]
 
-Timing path: u4_setio/reg0_syn_29.clk->u4_setio/reg0_syn_29
-u4_setio/reg0_syn_29.clk
+Timing path: u4_setio/cas_reg0_reg_syn_4.clk->u4_setio/reg0_syn_29
+u4_setio/cas_reg0_reg_syn_4.clk
 u4_setio/reg0_syn_29
-279 0.496000 4.794000 4.298000 2 2
-u4_setio/cnt_60ns[0] u4_setio/cnt_60ns_b[2]_syn_8.d[1]
-u4_setio/cnt_60ns_b[2]_syn_2 u4_setio/reg0_syn_29.a[1]
+237 0.162000 4.758000 4.596000 2 2
+u4_setio/cas_reg1 u6_emif_read/reg4_syn_81.c[0]
+u4_setio/cnt_60ns_b[4]_syn_2 u4_setio/reg0_syn_29.b[1]
+
+
+Endpoint: u4_setio/reg0_syn_32
+277 0.050000 7 3
+Timing path: u4_setio/cas_reg0_reg_syn_4.clk->u4_setio/reg0_syn_32
+u4_setio/cas_reg0_reg_syn_4.clk
+u4_setio/reg0_syn_32
+279 0.050000 4.730000 4.680000 2 2
+u4_setio/cas_reg1 u6_emif_read/reg4_syn_81.c[0]
+u4_setio/cnt_60ns_b[4]_syn_2 u4_setio/reg0_syn_32.b[1]
+
+Timing path: u4_setio/reg0_syn_34.clk->u4_setio/reg0_syn_32
+u4_setio/reg0_syn_34.clk
+u4_setio/reg0_syn_32
+319 0.352000 4.730000 4.378000 2 2
+u4_setio/cnt_60ns[2] u6_emif_read/reg4_syn_79.c[0]
+u4_setio/add0_syn_22 u4_setio/reg0_syn_32.a[1]
+
+Timing path: u4_setio/reg0_syn_32.clk->u4_setio/reg0_syn_32
+u4_setio/reg0_syn_32.clk
+u4_setio/reg0_syn_32
+359 0.356000 4.730000 4.374000 2 2
+u4_setio/cnt_60ns[1] u6_emif_read/reg4_syn_79.b[0]
+u4_setio/add0_syn_22 u4_setio/reg0_syn_32.a[1]
 
 
 
 Hold check
-319 3
-Endpoint: u4_setio/setout_reg_reg_syn_5
-321 0.249000 1 1
-Timing path: u3_op/reg1_syn_25.clk->u4_setio/setout_reg_reg_syn_5
-u3_op/reg1_syn_25.clk
-u4_setio/setout_reg_reg_syn_5
-323 0.249000 2.291000 2.540000 1 1
-u3_op/we_logic_reg u4_setio/setout_reg_reg_syn_5.d[0]
+399 3
+Endpoint: emif_data[4]_syn_4
+401 0.201000 1 1
+Timing path: u7_emif_write/reg0_syn_100.clk->emif_data[4]_syn_4
+u7_emif_write/reg0_syn_100.clk
+emif_data[4]_syn_4
+403 0.201000 2.062000 2.263000 0 1
+u7_emif_write/fpag_write_reg[4] emif_data[4]_syn_4.do[0]
 
 
-Endpoint: emif_data[9]_syn_2
-359 0.480000 1 1
-Timing path: u7_emif_write/mux2_syn_1529.clk->emif_data[9]_syn_2
-u7_emif_write/mux2_syn_1529.clk
-emif_data[9]_syn_2
-361 0.480000 2.062000 2.542000 0 1
-u7_emif_write/fpag_write_reg[9] emif_data[9]_syn_2.do[0]
-
-
-Endpoint: u4_setio/reg0_syn_29
-397 0.487000 7 3
-Timing path: u4_setio/cas_reg1_reg_syn_5.clk->u4_setio/reg0_syn_29
-u4_setio/cas_reg1_reg_syn_5.clk
-u4_setio/reg0_syn_29
-399 0.487000 2.105000 2.592000 1 1
-u4_setio/cnt_60ns[3] u4_setio/reg0_syn_29.c[1]
-
-Timing path: u4_setio/reg0_syn_32.clk->u4_setio/reg0_syn_29
+Endpoint: u4_setio/reg0_syn_32
+439 0.450000 6 3
+Timing path: u4_setio/reg0_syn_32.clk->u4_setio/reg0_syn_32
 u4_setio/reg0_syn_32.clk
-u4_setio/reg0_syn_29
-437 0.727000 2.105000 2.832000 1 1
-u4_setio/cnt_60ns[4] u4_setio/reg0_syn_29.d[1]
+u4_setio/reg0_syn_32
+441 0.450000 2.090000 2.540000 1 1
+u4_setio/cnt_60ns[3] u4_setio/reg0_syn_32.d[0]
 
-Timing path: u4_setio/cas_reg1_reg_syn_5.clk->u4_setio/reg0_syn_29
-u4_setio/cas_reg1_reg_syn_5.clk
-u4_setio/reg0_syn_29
-475 1.027000 2.105000 3.132000 2 2
-u4_setio/cas_reg1 u4_setio/cas_reg1_reg_syn_5.c[1]
-u4_setio/cnt_60ns_b[4]_syn_2 u4_setio/reg0_syn_29.b[1]
+Timing path: u4_setio/reg0_syn_29.clk->u4_setio/reg0_syn_32
+u4_setio/reg0_syn_29.clk
+u4_setio/reg0_syn_32
+479 0.649000 2.090000 2.739000 1 1
+u4_setio/cnt_60ns[0] u4_setio/reg0_syn_32.b[0]
+
+Timing path: u4_setio/reg0_syn_32.clk->u4_setio/reg0_syn_32
+u4_setio/reg0_syn_32.clk
+u4_setio/reg0_syn_32
+517 0.700000 2.090000 2.790000 1 1
+u4_setio/cnt_60ns[1] u4_setio/reg0_syn_32.c[0]
+
+
+Endpoint: emif_data[8]_syn_2
+555 0.470000 1 1
+Timing path: u7_emif_write/reg0_syn_119.clk->emif_data[8]_syn_2
+u7_emif_write/reg0_syn_119.clk
+emif_data[8]_syn_2
+557 0.470000 2.062000 2.532000 1 1
+u7_emif_write/fpag_write_reg[8] emif_data[8]_syn_2.do[0]
 
 
 
 
 clock: u1_pll/pll_inst.clkc[1]
-515 14338 1098 2
+593 14678 1112 2
 Setup check
-525 3
-Endpoint: u8_encoder/u13_sin/u22_fir/U1_fir/delay_pipeline[2][15]_syn_1035
-525 -0.185000 16 3
-Timing path: u8_encoder/u13_sin/u21_sample/reg0_syn_57.clk->u8_encoder/u13_sin/u22_fir/U1_fir/delay_pipeline[2][15]_syn_1035
-u8_encoder/u13_sin/u21_sample/reg0_syn_57.clk
-u8_encoder/u13_sin/u22_fir/U1_fir/delay_pipeline[2][15]_syn_1035
-527 -0.185000 7.024000 7.209000 3 4
-u8_encoder/u13_sin/u21_sample/DIV_CNT[4] u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2290.c[1]
-u8_encoder/u13_sin/u21_sample/conv_en_n_syn_4 u8_encoder/u13_sin/u21_sample/conv_en_n_syn_27.b[0]
-u8_encoder/u13_sin/u21_sample/DIV_CNT_b1_n u8_encoder/u13_sin/u21_sample/reg0_syn_75.d[0]
-u8_encoder/u13_sin/u21_sample/conv_done_reg_n_dup_15 u8_encoder/u13_sin/u22_fir/U1_fir/delay_pipeline[2][15]_syn_1035.mi[0]
+603 3
+Endpoint: sincos_cs_n_syn_4
+603 -1.575000 102 3
+Timing path: u8_encoder/u13_sin/u21_sample/reg1_syn_56.clk->sincos_cs_n_syn_4
+u8_encoder/u13_sin/u21_sample/reg1_syn_56.clk
+sincos_cs_n_syn_4
+605 -1.575000 6.891000 8.466000 4 5
+u8_encoder/u13_sin/u21_sample/LSM_CNT[2] u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_99.c[0]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_25 u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_104.a[1]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_27 u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_86.a[1]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_35 u8_encoder/u13_sin/u21_sample/cs_n_reg_reg_syn_5.a[0]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1 sincos_cs_n_syn_4.do[0]
 
-Timing path: u8_encoder/u13_sin/u21_sample/reg0_syn_60.clk->u8_encoder/u13_sin/u22_fir/U1_fir/delay_pipeline[2][15]_syn_1035
-u8_encoder/u13_sin/u21_sample/reg0_syn_60.clk
-u8_encoder/u13_sin/u22_fir/U1_fir/delay_pipeline[2][15]_syn_1035
-567 -0.162000 7.024000 7.186000 3 4
-u8_encoder/u13_sin/u21_sample/DIV_CNT[6] u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2290.b[0]
-u8_encoder/u13_sin/u21_sample/conv_en_n_syn_2 u8_encoder/u13_sin/u21_sample/conv_en_n_syn_27.a[0]
-u8_encoder/u13_sin/u21_sample/DIV_CNT_b1_n u8_encoder/u13_sin/u21_sample/reg0_syn_75.d[0]
-u8_encoder/u13_sin/u21_sample/conv_done_reg_n_dup_15 u8_encoder/u13_sin/u22_fir/U1_fir/delay_pipeline[2][15]_syn_1035.mi[0]
+Timing path: u8_encoder/u13_sin/u21_sample/reg1_syn_56.clk->sincos_cs_n_syn_4
+u8_encoder/u13_sin/u21_sample/reg1_syn_56.clk
+sincos_cs_n_syn_4
+647 -1.575000 6.891000 8.466000 4 5
+u8_encoder/u13_sin/u21_sample/LSM_CNT[2] u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_99.c[0]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_25 u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_104.a[0]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_27 u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_86.a[1]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_35 u8_encoder/u13_sin/u21_sample/cs_n_reg_reg_syn_5.a[0]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1 sincos_cs_n_syn_4.do[0]
 
-Timing path: u8_encoder/u13_sin/u21_sample/reg0_syn_62.clk->u8_encoder/u13_sin/u22_fir/U1_fir/delay_pipeline[2][15]_syn_1035
-u8_encoder/u13_sin/u21_sample/reg0_syn_62.clk
-u8_encoder/u13_sin/u22_fir/U1_fir/delay_pipeline[2][15]_syn_1035
-607 -0.155000 7.024000 7.179000 3 4
-u8_encoder/u13_sin/u21_sample/DIV_CNT[7] u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2290.c[0]
-u8_encoder/u13_sin/u21_sample/conv_en_n_syn_2 u8_encoder/u13_sin/u21_sample/conv_en_n_syn_27.a[0]
-u8_encoder/u13_sin/u21_sample/DIV_CNT_b1_n u8_encoder/u13_sin/u21_sample/reg0_syn_75.d[0]
-u8_encoder/u13_sin/u21_sample/conv_done_reg_n_dup_15 u8_encoder/u13_sin/u22_fir/U1_fir/delay_pipeline[2][15]_syn_1035.mi[0]
-
-
-Endpoint: u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116
-647 -0.063000 16 3
-Timing path: u8_encoder/u13_sin/u21_sample/reg0_syn_57.clk->u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116
-u8_encoder/u13_sin/u21_sample/reg0_syn_57.clk
-u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116
-649 -0.063000 7.096000 7.159000 3 4
-u8_encoder/u13_sin/u21_sample/DIV_CNT[4] u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2290.c[1]
-u8_encoder/u13_sin/u21_sample/conv_en_n_syn_4 u8_encoder/u13_sin/u21_sample/conv_en_n_syn_27.b[0]
-u8_encoder/u13_sin/u21_sample/DIV_CNT_b1_n u8_encoder/u13_sin/u21_sample/reg0_syn_66.d[0]
-u8_encoder/u13_sin/u21_sample/conv_done_reg_n_dup_6 u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116.mi[0]
-
-Timing path: u8_encoder/u13_sin/u21_sample/reg0_syn_60.clk->u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116
-u8_encoder/u13_sin/u21_sample/reg0_syn_60.clk
-u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116
-689 -0.040000 7.096000 7.136000 3 4
-u8_encoder/u13_sin/u21_sample/DIV_CNT[6] u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2290.b[0]
-u8_encoder/u13_sin/u21_sample/conv_en_n_syn_2 u8_encoder/u13_sin/u21_sample/conv_en_n_syn_27.a[0]
-u8_encoder/u13_sin/u21_sample/DIV_CNT_b1_n u8_encoder/u13_sin/u21_sample/reg0_syn_66.d[0]
-u8_encoder/u13_sin/u21_sample/conv_done_reg_n_dup_6 u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116.mi[0]
-
-Timing path: u8_encoder/u13_sin/u21_sample/reg0_syn_62.clk->u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116
-u8_encoder/u13_sin/u21_sample/reg0_syn_62.clk
-u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116
-729 -0.033000 7.096000 7.129000 3 4
-u8_encoder/u13_sin/u21_sample/DIV_CNT[7] u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2290.c[0]
-u8_encoder/u13_sin/u21_sample/conv_en_n_syn_2 u8_encoder/u13_sin/u21_sample/conv_en_n_syn_27.a[0]
-u8_encoder/u13_sin/u21_sample/DIV_CNT_b1_n u8_encoder/u13_sin/u21_sample/reg0_syn_66.d[0]
-u8_encoder/u13_sin/u21_sample/conv_done_reg_n_dup_6 u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116.mi[0]
+Timing path: u8_encoder/u13_sin/u21_sample/reg1_syn_59.clk->sincos_cs_n_syn_4
+u8_encoder/u13_sin/u21_sample/reg1_syn_59.clk
+sincos_cs_n_syn_4
+689 -1.551000 6.891000 8.442000 4 5
+u8_encoder/u13_sin/u21_sample/LSM_CNT[1] u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_99.b[0]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_25 u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_104.a[1]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_27 u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_86.a[1]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_35 u8_encoder/u13_sin/u21_sample/cs_n_reg_reg_syn_5.a[0]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1 sincos_cs_n_syn_4.do[0]
 
 
-Endpoint: u7_emif_write/reg0_syn_120
-769 0.022000 7 3
-Timing path: emif_addr_in[0]_syn_4.ipclk->u7_emif_write/reg0_syn_120
-emif_addr_in[0]_syn_4.ipclk
-u7_emif_write/reg0_syn_120
-771 0.022000 7.024000 7.002000 3 3
-u5_control/col_addr_reg[0] u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2397.c[0]
-u7_emif_write/mux2_syn_1433 u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2374.a[0]
-u7_emif_write/mux2_syn_1445 u7_emif_write/reg0_syn_120.d[1]
+Endpoint: sincos_clk_syn_4
+731 -0.448000 12 3
+Timing path: u8_encoder/u13_sin/u21_sample/reg1_syn_41.clk->sincos_clk_syn_4
+u8_encoder/u13_sin/u21_sample/reg1_syn_41.clk
+sincos_clk_syn_4
+733 -0.448000 6.764000 7.212000 4 5
+u8_encoder/u13_sin/u21_sample/LSM_CNT[7] u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_116.c[1]
+u8_encoder/u13_sin/u21_sample/LSM_CNT[7]_syn_332 u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_101.d[1]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_9 u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_101.a[0]
+u8_encoder/u13_sin/u21_sample/sclk_reg_n3 u8_encoder/u13_sin/u21_sample/reg5_syn_72.d[0]
+u8_encoder/u13_sin/u21_sample/sclk_reg_n1 sincos_clk_syn_4.do[0]
 
-Timing path: emif_addr_in[2]_syn_4.ipclk->u7_emif_write/reg0_syn_120
+Timing path: u8_encoder/u13_sin/u21_sample/reg1_syn_39.clk->sincos_clk_syn_4
+u8_encoder/u13_sin/u21_sample/reg1_syn_39.clk
+sincos_clk_syn_4
+775 -0.318000 6.764000 7.082000 4 5
+u8_encoder/u13_sin/u21_sample/LSM_CNT[6] u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_116.d[1]
+u8_encoder/u13_sin/u21_sample/LSM_CNT[7]_syn_332 u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_101.d[1]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_9 u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_101.a[0]
+u8_encoder/u13_sin/u21_sample/sclk_reg_n3 u8_encoder/u13_sin/u21_sample/reg5_syn_72.d[0]
+u8_encoder/u13_sin/u21_sample/sclk_reg_n1 sincos_clk_syn_4.do[0]
+
+Timing path: u8_encoder/u13_sin/u21_sample/reg1_syn_62.clk->sincos_clk_syn_4
+u8_encoder/u13_sin/u21_sample/reg1_syn_62.clk
+sincos_clk_syn_4
+817 0.492000 6.764000 6.272000 3 4
+u8_encoder/u13_sin/u21_sample/LSM_CNT[5] u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_101.c[1]
+u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_9 u8_encoder/u13_sin/u21_sample/cs_n_reg_n1_syn_101.a[0]
+u8_encoder/u13_sin/u21_sample/sclk_reg_n3 u8_encoder/u13_sin/u21_sample/reg5_syn_72.d[0]
+u8_encoder/u13_sin/u21_sample/sclk_reg_n1 sincos_clk_syn_4.do[0]
+
+
+Endpoint: u7_emif_write/mux2_syn_1527
+857 0.094000 10 3
+Timing path: emif_addr_in[2]_syn_4.ipclk->u7_emif_write/mux2_syn_1527
 emif_addr_in[2]_syn_4.ipclk
-u7_emif_write/reg0_syn_120
-809 0.200000 7.024000 6.824000 3 3
-u5_control/col_addr_reg[2] u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2397.d[0]
-u7_emif_write/mux2_syn_1433 u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2374.a[0]
-u7_emif_write/mux2_syn_1445 u7_emif_write/reg0_syn_120.d[1]
+u7_emif_write/mux2_syn_1527
+859 0.094000 7.024000 6.930000 3 3
+u5_control/col_addr_reg[2] u7_emif_write/mux2_syn_1533.d[1]
+u7_emif_write/mux2_syn_1433 u7_emif_write/mux2_syn_1533.a[0]
+u7_emif_write/mux2_syn_1457 u7_emif_write/mux2_syn_1527.a[0]
 
-Timing path: emif_addr_in[1]_syn_4.ipclk->u7_emif_write/reg0_syn_120
+Timing path: emif_addr_in[0]_syn_4.ipclk->u7_emif_write/mux2_syn_1527
+emif_addr_in[0]_syn_4.ipclk
+u7_emif_write/mux2_syn_1527
+897 0.187000 7.024000 6.837000 3 3
+u5_control/col_addr_reg[0] u7_emif_write/mux2_syn_1533.c[1]
+u7_emif_write/mux2_syn_1433 u7_emif_write/mux2_syn_1533.a[0]
+u7_emif_write/mux2_syn_1457 u7_emif_write/mux2_syn_1527.a[0]
+
+Timing path: emif_addr_in[1]_syn_4.ipclk->u7_emif_write/mux2_syn_1527
 emif_addr_in[1]_syn_4.ipclk
-u7_emif_write/reg0_syn_120
-847 1.118000 7.024000 5.906000 2 2
-u5_control/col_addr_reg[1] u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2374.b[0]
-u7_emif_write/mux2_syn_1445 u7_emif_write/reg0_syn_120.d[1]
+u7_emif_write/mux2_syn_1527
+935 0.791000 7.024000 6.233000 2 2
+u5_control/col_addr_reg[1] u7_emif_write/mux2_syn_1525.b[1]
+u7_emif_write/mux2_syn_1435 u7_emif_write/mux2_syn_1527.b[0]
 
 
 
 Hold check
-883 3
-Endpoint: u8_encoder/u13_sin/u21_sample/reg3_syn_84
-885 0.323000 1 1
-Timing path: u8_encoder/u13_sin/u21_sample/reg2_syn_174.clk->u8_encoder/u13_sin/u21_sample/reg3_syn_84
-u8_encoder/u13_sin/u21_sample/reg2_syn_174.clk
-u8_encoder/u13_sin/u21_sample/reg3_syn_84
-887 0.323000 2.044000 2.367000 0 1
-u8_encoder/u13_sin/u21_sample/data_a[3] u8_encoder/u13_sin/u21_sample/reg3_syn_84.mi[1]
-
-
-Endpoint: u8_encoder/u11_biss/U3_CRC/sel3_syn_129
-921 0.323000 1 1
-Timing path: u8_encoder/u11_biss/U3_CRC/sel3_syn_133.clk->u8_encoder/u11_biss/U3_CRC/sel3_syn_129
-u8_encoder/u11_biss/U3_CRC/sel3_syn_133.clk
-u8_encoder/u11_biss/U3_CRC/sel3_syn_129
-923 0.323000 2.044000 2.367000 0 1
-u8_encoder/u11_biss/U2_control/read_done0 u8_encoder/u11_biss/U3_CRC/sel3_syn_129.mi[0]
-
-
+971 3
 Endpoint: u8_encoder/u13_sin/u21_sample/reg3_syn_72
-957 0.330000 1 1
-Timing path: u8_encoder/u13_sin/u21_sample/reg2_syn_167.clk->u8_encoder/u13_sin/u21_sample/reg3_syn_72
-u8_encoder/u13_sin/u21_sample/reg2_syn_167.clk
+973 0.251000 1 1
+Timing path: u8_encoder/u13_sin/u21_sample/reg2_syn_173.clk->u8_encoder/u13_sin/u21_sample/reg3_syn_72
+u8_encoder/u13_sin/u21_sample/reg2_syn_173.clk
 u8_encoder/u13_sin/u21_sample/reg3_syn_72
-959 0.330000 2.028000 2.358000 0 1
-u8_encoder/u13_sin/u21_sample/data_b[1] u8_encoder/u13_sin/u21_sample/reg3_syn_72.mi[0]
+975 0.251000 2.107000 2.358000 0 1
+u8_encoder/u13_sin/u21_sample/data_a[10] u8_encoder/u13_sin/u21_sample/reg3_syn_72.mi[1]
+
+
+Endpoint: u8_encoder/u13_sin/u21_sample/reg3_syn_90
+1009 0.260000 1 1
+Timing path: u8_encoder/u13_sin/u21_sample/reg2_syn_165.clk->u8_encoder/u13_sin/u21_sample/reg3_syn_90
+u8_encoder/u13_sin/u21_sample/reg2_syn_165.clk
+u8_encoder/u13_sin/u21_sample/reg3_syn_90
+1011 0.260000 2.107000 2.367000 0 1
+u8_encoder/u13_sin/u21_sample/data_a[4] u8_encoder/u13_sin/u21_sample/reg3_syn_90.mi[1]
+
+
+Endpoint: u8_encoder/u13_sin/u21_sample/reg5_syn_92
+1045 0.314000 1 1
+Timing path: u8_encoder/u13_sin/u21_sample/reg4_syn_198.clk->u8_encoder/u13_sin/u21_sample/reg5_syn_92
+u8_encoder/u13_sin/u21_sample/reg4_syn_198.clk
+u8_encoder/u13_sin/u21_sample/reg5_syn_92
+1047 0.314000 2.044000 2.358000 0 1
+u8_encoder/u13_sin/u21_sample/data_b[3] u8_encoder/u13_sin/u21_sample/reg5_syn_92.mi[1]
 
 
 
 
 clock: u1_pll/pll_inst.clkc[2]
-993 15934 700 2
+1081 14156 682 2
 Setup check
-1003 3
-Endpoint: b_out_able_syn_6
-1003 -0.426000 16 3
-Timing path: u8_encoder/data_out_reg_b1[1]_syn_18.clk->b_out_able_syn_6
-u8_encoder/data_out_reg_b1[1]_syn_18.clk
-b_out_able_syn_6
-1005 -0.426000 6.790000 7.216000 3 4
-u6_emif_read/encoder_mode_reg[1] u8_encoder/data_out_reg_b1[0]_syn_32.b[1]
-u8_encoder/data_out_reg_b1[0]_syn_2 u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2198.b[0]
-u8_encoder/b_out_reg_n_syn_2 u8_encoder/b_out_reg_reg_syn_8.d[0]
-u8_encoder/b_out_reg_n b_out_able_syn_6.do[0]
-
-Timing path: u8_encoder/data_out_reg_b1[1]_syn_18.clk->b_out_able_syn_6
-u8_encoder/data_out_reg_b1[1]_syn_18.clk
-b_out_able_syn_6
-1045 -0.345000 6.790000 7.135000 3 4
-u6_emif_read/encoder_mode_reg[1] u8_encoder/a_out_reg_n_syn_11.b[1]
-u8_encoder/a_out_reg_n_syn_2 u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2198.a[0]
-u8_encoder/b_out_reg_n_syn_2 u8_encoder/b_out_reg_reg_syn_8.d[0]
-u8_encoder/b_out_reg_n b_out_able_syn_6.do[0]
-
-Timing path: u6_emif_read/reg5_syn_32.clk->b_out_able_syn_6
-u6_emif_read/reg5_syn_32.clk
-b_out_able_syn_6
-1085 -0.224000 6.790000 7.014000 3 4
-u6_emif_read/encoder_mode_reg[2] u8_encoder/a_out_reg_n_syn_11.c[1]
-u8_encoder/a_out_reg_n_syn_2 u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2198.a[0]
-u8_encoder/b_out_reg_n_syn_2 u8_encoder/b_out_reg_reg_syn_8.d[0]
-u8_encoder/b_out_reg_n b_out_able_syn_6.do[0]
-
-
-Endpoint: a_out_able_syn_6
-1125 -0.088000 14 3
-Timing path: u8_encoder/data_out_reg_b1[1]_syn_18.clk->a_out_able_syn_6
-u8_encoder/data_out_reg_b1[1]_syn_18.clk
-a_out_able_syn_6
-1127 -0.088000 6.917000 7.005000 3 4
-u6_emif_read/encoder_mode_reg[1] u8_encoder/a_out_reg_n_syn_11.b[1]
-u8_encoder/a_out_reg_n_syn_2 u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_103.a[0]
+1091 3
+Endpoint: a_out_able_syn_4
+1091 -0.679000 14 3
+Timing path: u6_emif_read/reg5_syn_56.clk->a_out_able_syn_4
+u6_emif_read/reg5_syn_56.clk
+a_out_able_syn_4
+1093 -0.679000 6.790000 7.469000 3 4
+u6_emif_read/encoder_mode_reg[1] u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2352.b[0]
+u8_encoder/data_out_reg_b1[0]_syn_5 u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_85.b[0]
 u8_encoder/a_out_reg_n_syn_4 u8_encoder/a_out_reg_reg_syn_8.a[0]
-u8_encoder/a_out_reg_n a_out_able_syn_6.do[0]
+u8_encoder/a_out_reg_n a_out_able_syn_4.do[0]
 
-Timing path: u6_emif_read/reg5_syn_32.clk->a_out_able_syn_6
-u6_emif_read/reg5_syn_32.clk
-a_out_able_syn_6
-1167 0.033000 6.917000 6.884000 3 4
-u6_emif_read/encoder_mode_reg[2] u8_encoder/a_out_reg_n_syn_11.c[1]
-u8_encoder/a_out_reg_n_syn_2 u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_103.a[0]
+Timing path: u6_emif_read/reg5_syn_56.clk->a_out_able_syn_4
+u6_emif_read/reg5_syn_56.clk
+a_out_able_syn_4
+1133 -0.649000 6.790000 7.439000 3 4
+u6_emif_read/encoder_mode_reg[1] u8_encoder/data_b_out_reg_n_syn_20.b[0]
+u8_encoder/a_out_reg_n_syn_2 u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_85.a[0]
 u8_encoder/a_out_reg_n_syn_4 u8_encoder/a_out_reg_reg_syn_8.a[0]
-u8_encoder/a_out_reg_n a_out_able_syn_6.do[0]
+u8_encoder/a_out_reg_n a_out_able_syn_4.do[0]
 
-Timing path: u8_encoder/data_out_reg_b1[1]_syn_18.clk->a_out_able_syn_6
-u8_encoder/data_out_reg_b1[1]_syn_18.clk
-a_out_able_syn_6
-1207 0.081000 6.917000 6.836000 3 4
-u6_emif_read/encoder_mode_reg[1] u8_encoder/data_out_reg_b1[0]_syn_32.b[1]
-u8_encoder/data_out_reg_b1[0]_syn_2 u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_103.b[0]
+Timing path: u6_emif_read/reg5_syn_56.clk->a_out_able_syn_4
+u6_emif_read/reg5_syn_56.clk
+a_out_able_syn_4
+1173 -0.554000 6.790000 7.344000 3 4
+u6_emif_read/encoder_mode_reg[2] u8_encoder/data_b_out_reg_n_syn_20.c[0]
+u8_encoder/a_out_reg_n_syn_2 u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_85.a[0]
 u8_encoder/a_out_reg_n_syn_4 u8_encoder/a_out_reg_reg_syn_8.a[0]
-u8_encoder/a_out_reg_n a_out_able_syn_6.do[0]
+u8_encoder/a_out_reg_n a_out_able_syn_4.do[0]
 
 
-Endpoint: led_out[2]_syn_4
-1247 -0.053000 179 3
-Timing path: u9_led/reg1_syn_149.clk->led_out[2]_syn_4
-u9_led/reg1_syn_149.clk
-led_out[2]_syn_4
-1249 -0.053000 12.025000 12.078000 7 8
-u9_led/timer[3] u9_led/led_reg_b[0]_syn_96.b[0]
-u9_led/led_reg_b[0]_syn_2 u9_led/led_reg_b[0]_syn_96.a[1]
-u9_led/led_reg_b[0]_syn_4 u9_led/led_reg_b[0]_syn_93.a[1]
-u9_led/led_reg_b[0]_syn_6 u9_led/led_reg_b[0]_syn_76.a[1]
-u9_led/led_reg_b[0]_syn_20 u9_led/led_reg_b[0]_syn_81.a[1]
-u9_led/led_reg_b[0]_syn_24 u8_encoder/u14_tawa/u33_uart_send/send_en1_reg_syn_8.d[1]
-u9_led/led_reg_b[3]_syn_2 u9_led/reg0_syn_26.a[0]
-u9_led/led_reg_b[2] led_out[2]_syn_4.do[0]
+Endpoint: b_out_syn_4
+1213 -0.673000 18 3
+Timing path: u6_emif_read/reg5_syn_56.clk->b_out_syn_4
+u6_emif_read/reg5_syn_56.clk
+b_out_syn_4
+1215 -0.673000 6.790000 7.463000 3 4
+u6_emif_read/encoder_mode_reg[2] u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2358.b[0]
+u8_encoder/data_b_out_reg_n_syn_4 u8_encoder/data_b_out_reg_n_syn_20.a[1]
+u8_encoder/data_b_out_reg_n_syn_10 u8_encoder/data_b_out_reg_reg_syn_8.c[0]
+u8_encoder/data_b_out_reg_n b_out_syn_4.do[0]
 
-Timing path: u9_led/reg1_syn_149.clk->led_out[2]_syn_4
-u9_led/reg1_syn_149.clk
-led_out[2]_syn_4
-1297 -0.053000 12.025000 12.078000 7 8
-u9_led/timer[3] u9_led/led_reg_b[0]_syn_96.b[0]
-u9_led/led_reg_b[0]_syn_2 u9_led/led_reg_b[0]_syn_96.a[1]
-u9_led/led_reg_b[0]_syn_4 u9_led/led_reg_b[0]_syn_93.a[1]
-u9_led/led_reg_b[0]_syn_6 u9_led/led_reg_b[0]_syn_76.a[0]
-u9_led/led_reg_b[0]_syn_20 u9_led/led_reg_b[0]_syn_81.a[1]
-u9_led/led_reg_b[0]_syn_24 u8_encoder/u14_tawa/u33_uart_send/send_en1_reg_syn_8.d[1]
-u9_led/led_reg_b[3]_syn_2 u9_led/reg0_syn_26.a[0]
-u9_led/led_reg_b[2] led_out[2]_syn_4.do[0]
+Timing path: u6_emif_read/reg5_syn_45.clk->b_out_syn_4
+u6_emif_read/reg5_syn_45.clk
+b_out_syn_4
+1255 -0.602000 6.790000 7.392000 3 4
+u6_emif_read/encoder_mode_reg[4]_dup_1 u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2358.c[0]
+u8_encoder/data_b_out_reg_n_syn_4 u8_encoder/data_b_out_reg_n_syn_20.a[1]
+u8_encoder/data_b_out_reg_n_syn_10 u8_encoder/data_b_out_reg_reg_syn_8.c[0]
+u8_encoder/data_b_out_reg_n b_out_syn_4.do[0]
 
-Timing path: u9_led/reg1_syn_146.clk->led_out[2]_syn_4
-u9_led/reg1_syn_146.clk
-led_out[2]_syn_4
-1345 0.019000 12.025000 12.006000 7 8
-u9_led/timer[2] u9_led/led_reg_b[0]_syn_96.a[0]
-u9_led/led_reg_b[0]_syn_2 u9_led/led_reg_b[0]_syn_96.a[1]
-u9_led/led_reg_b[0]_syn_4 u9_led/led_reg_b[0]_syn_93.a[1]
-u9_led/led_reg_b[0]_syn_6 u9_led/led_reg_b[0]_syn_76.a[1]
-u9_led/led_reg_b[0]_syn_20 u9_led/led_reg_b[0]_syn_81.a[1]
-u9_led/led_reg_b[0]_syn_24 u8_encoder/u14_tawa/u33_uart_send/send_en1_reg_syn_8.d[1]
-u9_led/led_reg_b[3]_syn_2 u9_led/reg0_syn_26.a[0]
-u9_led/led_reg_b[2] led_out[2]_syn_4.do[0]
+Timing path: u6_emif_read/reg5_syn_56.clk->b_out_syn_4
+u6_emif_read/reg5_syn_56.clk
+b_out_syn_4
+1295 -0.597000 6.790000 7.387000 3 4
+u6_emif_read/encoder_mode_reg[1] u8_encoder/u10_abz/reg1_syn_11.a[0]
+u8_encoder/data_b_out_reg_n_syn_6 u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2069.a[0]
+u8_encoder/data_b_out_reg_n_syn_8 u8_encoder/data_b_out_reg_reg_syn_8.b[0]
+u8_encoder/data_b_out_reg_n b_out_syn_4.do[0]
+
+
+Endpoint: a_out_syn_4
+1335 -0.348000 14 3
+Timing path: u6_emif_read/reg5_syn_56.clk->a_out_syn_4
+u6_emif_read/reg5_syn_56.clk
+a_out_syn_4
+1337 -0.348000 6.790000 7.138000 3 4
+u6_emif_read/encoder_mode_reg[1] u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2352.b[0]
+u8_encoder/data_out_reg_b1[0]_syn_5 u8_encoder/data_a_out_reg_n_syn_11.a[1]
+u8_encoder/data_a_out_reg_n_syn_4 u8_encoder/data_a_out_reg_n_syn_11.a[0]
+u8_encoder/data_a_out_reg_n a_out_syn_4.do[0]
+
+Timing path: u6_emif_read/reg5_syn_56.clk->a_out_syn_4
+u6_emif_read/reg5_syn_56.clk
+a_out_syn_4
+1377 -0.098000 6.790000 6.888000 3 4
+u6_emif_read/encoder_mode_reg[1] u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2067.b[0]
+u8_encoder/data_a_out_reg_n_syn_2 u8_encoder/data_a_out_reg_n_syn_11.b[1]
+u8_encoder/data_a_out_reg_n_syn_4 u8_encoder/data_a_out_reg_n_syn_11.a[0]
+u8_encoder/data_a_out_reg_n a_out_syn_4.do[0]
+
+Timing path: u6_emif_read/reg5_syn_56.clk->a_out_syn_4
+u6_emif_read/reg5_syn_56.clk
+a_out_syn_4
+1417 -0.057000 6.790000 6.847000 3 4
+u6_emif_read/encoder_mode_reg[2] u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2352.c[0]
+u8_encoder/data_out_reg_b1[0]_syn_5 u8_encoder/data_a_out_reg_n_syn_11.a[1]
+u8_encoder/data_a_out_reg_n_syn_4 u8_encoder/data_a_out_reg_n_syn_11.a[0]
+u8_encoder/data_a_out_reg_n a_out_syn_4.do[0]
 
 
 
 Hold check
-1393 3
-Endpoint: u8_encoder/data_b_out_reg_n_syn_17
-1395 0.175000 21 3
-Timing path: u6_emif_read/reg5_syn_33.clk->u8_encoder/data_b_out_reg_n_syn_17
-u6_emif_read/reg5_syn_33.clk
-u8_encoder/data_b_out_reg_n_syn_17
-1397 0.175000 2.291000 2.466000 1 1
-u6_emif_read/encoder_mode_reg[4]_dup_1 u8_encoder/data_b_out_reg_n_syn_17.d[0]
+1457 3
+Endpoint: u8_encoder/reg0_syn_194
+1459 0.175000 22 3
+Timing path: u6_emif_read/reg5_syn_51.clk->u8_encoder/reg0_syn_194
+u6_emif_read/reg5_syn_51.clk
+u8_encoder/reg0_syn_194
+1461 0.175000 2.291000 2.466000 1 1
+u6_emif_read/encoder_mode_reg[3]_dup_1 u8_encoder/reg0_syn_194.d[1]
 
-Timing path: u8_encoder/u12_ssi/reg4_syn_166.clk->u8_encoder/data_b_out_reg_n_syn_17
-u8_encoder/u12_ssi/reg4_syn_166.clk
-u8_encoder/data_b_out_reg_n_syn_17
-1431 1.055000 2.291000 3.346000 2 2
-u8_encoder/u12_ssi/angle_reg[21] u8_encoder/u13_sin/u22_fir/U1_fir/reg1_syn_113.d[1]
-u8_encoder/data_out_reg_b1[21]_syn_4 u8_encoder/data_b_out_reg_n_syn_17.a[0]
+Timing path: u6_emif_read/reg5_syn_51.clk->u8_encoder/reg0_syn_194
+u6_emif_read/reg5_syn_51.clk
+u8_encoder/reg0_syn_194
+1495 1.046000 2.291000 3.337000 2 2
+u6_emif_read/encoder_mode_reg[4]_dup_2 u8_encoder/u13_sin/u22_fir/U1_fir/reg1_syn_133.d[1]
+u8_encoder/data_out_reg_b1[17]_syn_8 u8_encoder/reg0_syn_194.a[1]
 
-Timing path: u8_encoder/data_out_reg_b1[13]_syn_18.clk->u8_encoder/data_b_out_reg_n_syn_17
-u8_encoder/data_out_reg_b1[13]_syn_18.clk
-u8_encoder/data_b_out_reg_n_syn_17
-1467 1.195000 2.291000 3.486000 2 2
-u6_emif_read/encoder_mode_reg[3] u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2190.d[0]
-u8_encoder/data_out_reg_b1[24]_syn_2 u8_encoder/data_b_out_reg_n_syn_17.c[0]
-
-
-Endpoint: u8_encoder/u10_abz/reg1_syn_10
-1503 0.314000 1 1
-Timing path: u8_encoder/u10_abz/bin1_reg_syn_4.clk->u8_encoder/u10_abz/reg1_syn_10
-u8_encoder/u10_abz/bin1_reg_syn_4.clk
-u8_encoder/u10_abz/reg1_syn_10
-1505 0.314000 2.135000 2.449000 0 1
-u8_encoder/u10_abz/bin1 u8_encoder/u10_abz/reg1_syn_10.mi[1]
+Timing path: u6_emif_read/reg5_syn_51.clk->u8_encoder/reg0_syn_194
+u6_emif_read/reg5_syn_51.clk
+u8_encoder/reg0_syn_194
+1531 1.094000 2.291000 3.385000 2 2
+u6_emif_read/encoder_mode_reg[4]_dup_2 u8_encoder/u13_sin/u22_fir/U1_fir/reg1_syn_133.b[0]
+u8_encoder/data_out_reg_b1[17]_syn_10 u8_encoder/reg0_syn_194.c[1]
 
 
-Endpoint: u8_encoder/u14_tawa/u31_uart_control/flag_send_reg0_reg_syn_6
-1539 0.330000 1 1
-Timing path: u8_encoder/u14_tawa/u31_uart_control/turn_data_b[23]_syn_35.clk->u8_encoder/u14_tawa/u31_uart_control/flag_send_reg0_reg_syn_6
-u8_encoder/u14_tawa/u31_uart_control/turn_data_b[23]_syn_35.clk
-u8_encoder/u14_tawa/u31_uart_control/flag_send_reg0_reg_syn_6
-1541 0.330000 2.119000 2.449000 0 1
-u8_encoder/u14_tawa/u31_uart_control/flag_send_reg u8_encoder/u14_tawa/u31_uart_control/flag_send_reg0_reg_syn_6.mi[1]
+Endpoint: u8_encoder/reg0_syn_194
+1567 0.175000 21 3
+Timing path: u6_emif_read/reg5_syn_51.clk->u8_encoder/reg0_syn_194
+u6_emif_read/reg5_syn_51.clk
+u8_encoder/reg0_syn_194
+1569 0.175000 2.291000 2.466000 1 1
+u6_emif_read/encoder_mode_reg[3]_dup_1 u8_encoder/reg0_syn_194.d[0]
+
+Timing path: u6_emif_read/reg5_syn_51.clk->u8_encoder/reg0_syn_194
+u6_emif_read/reg5_syn_51.clk
+u8_encoder/reg0_syn_194
+1603 0.810000 2.291000 3.101000 2 2
+u6_emif_read/encoder_mode_reg[4]_dup_2 u8_encoder/data_out_reg_b1[5]_syn_20.d[1]
+u8_encoder/data_out_reg_b1[5]_syn_8 u8_encoder/reg0_syn_194.a[0]
+
+Timing path: u6_emif_read/reg5_syn_51.clk->u8_encoder/reg0_syn_194
+u6_emif_read/reg5_syn_51.clk
+u8_encoder/reg0_syn_194
+1639 1.147000 2.291000 3.438000 2 2
+u6_emif_read/encoder_mode_reg[4]_dup_2 u8_encoder/u13_sin/u22_fir/U1_fir/reg1_syn_116.b[1]
+u8_encoder/data_out_reg_b1[5]_syn_10 u8_encoder/reg0_syn_194.b[0]
+
+
+Endpoint: u8_encoder/reg0_syn_179
+1675 0.272000 18 3
+Timing path: u6_emif_read/reg5_syn_45.clk->u8_encoder/reg0_syn_179
+u6_emif_read/reg5_syn_45.clk
+u8_encoder/reg0_syn_179
+1677 0.272000 2.291000 2.563000 1 1
+u6_emif_read/encoder_mode_reg[4]_dup_1 u8_encoder/reg0_syn_179.c[1]
+
+Timing path: u6_emif_read/reg5_syn_45.clk->u8_encoder/reg0_syn_179
+u6_emif_read/reg5_syn_45.clk
+u8_encoder/reg0_syn_179
+1711 1.224000 2.291000 3.515000 2 2
+u6_emif_read/encoder_mode_reg[4]_dup_1 u8_encoder/data_out_reg_b1[24]_syn_27.c[0]
+u8_encoder/data_out_reg_b1[24]_syn_6 u8_encoder/reg0_syn_179.a[1]
+
+Timing path: u6_emif_read/reg5_syn_56.clk->u8_encoder/reg0_syn_179
+u6_emif_read/reg5_syn_56.clk
+u8_encoder/reg0_syn_179
+1747 1.553000 2.291000 3.844000 3 3
+u6_emif_read/encoder_mode_reg[2] u8_encoder/data_out_reg_b1[21]_syn_22.d[0]
+u8_encoder/data_out_reg_b1[24]_syn_2 u8_encoder/data_out_reg_b1[25]_syn_11.c[1]
+u8_encoder/data_out_reg_b1[25]_syn_4 u8_encoder/reg0_syn_179.b[1]
 
 
 
 
 clock: u1_pll/pll_inst.clkc[3]
-1575 2000000000 3426 2
+1785 2000000000 3418 2
 Setup check
-1585 3
-Endpoint: u8_encoder/u13_sin/u22_fir/U2_fir/mult8_syn_2
-1585 2.125000 1 1
-Timing path: u8_encoder/u14_tawa/u31_uart_control/flag_send_reg_n_syn_17.clk->u8_encoder/u13_sin/u22_fir/U2_fir/mult8_syn_2
-u8_encoder/u14_tawa/u31_uart_control/flag_send_reg_n_syn_17.clk
-u8_encoder/u13_sin/u22_fir/U2_fir/mult8_syn_2
-1587 2.125000 6.878000 4.753000 0 1
-u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_52 u8_encoder/u13_sin/u22_fir/U2_fir/mult8_syn_2.cea
+1795 3
+Endpoint: u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2874
+1795 2.420000 1 1
+Timing path: u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_139.clk->u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2874
+u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_139.clk
+u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2874
+1797 2.420000 7.050000 4.630000 0 1
+u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_44 u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2874.ce
 
 
-Endpoint: u8_encoder/u13_sin/u22_fir/U2_fir/mult7_syn_2
-1621 2.155000 1 1
-Timing path: u8_encoder/u14_tawa/u31_uart_control/flag_send_reg_n_syn_17.clk->u8_encoder/u13_sin/u22_fir/U2_fir/mult7_syn_2
-u8_encoder/u14_tawa/u31_uart_control/flag_send_reg_n_syn_17.clk
-u8_encoder/u13_sin/u22_fir/U2_fir/mult7_syn_2
-1623 2.155000 6.878000 4.723000 0 1
-u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_52 u8_encoder/u13_sin/u22_fir/U2_fir/mult7_syn_2.cea
+Endpoint: u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2865
+1831 2.420000 1 1
+Timing path: u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_139.clk->u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2865
+u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_139.clk
+u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2865
+1833 2.420000 7.050000 4.630000 0 1
+u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_44 u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2865.ce
 
 
-Endpoint: u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2717
-1657 2.194000 1 1
-Timing path: u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_133.clk->u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2717
-u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_133.clk
-u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2717
-1659 2.194000 7.050000 4.856000 0 1
-u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_41 u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2717.ce
+Endpoint: u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2871
+1867 2.441000 1 1
+Timing path: u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_139.clk->u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2871
+u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_139.clk
+u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2871
+1869 2.441000 7.050000 4.609000 0 1
+u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_44 u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2871.ce
 
 
 
 Hold check
-1693 3
-Endpoint: u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2811
-1695 0.041000 1 1
-Timing path: u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_152.clk->u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2811
-u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_152.clk
-u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2811
-1697 0.041000 2.291000 2.332000 0 1
-u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_45 u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2811.ce
+1903 3
+Endpoint: u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2567
+1905 0.041000 1 1
+Timing path: u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_134.clk->u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2567
+u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_134.clk
+u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2567
+1907 0.041000 2.291000 2.332000 0 1
+u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_39 u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2567.ce
 
 
-Endpoint: u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2790
-1731 0.049000 1 1
-Timing path: u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_152.clk->u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2790
-u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_152.clk
-u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2790
-1733 0.049000 2.291000 2.340000 0 1
-u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_45 u8_encoder/u13_sin/u22_fir/U2_fir/reg0_syn_2790.ce
+Endpoint: u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2241
+1941 0.057000 1 1
+Timing path: u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116.clk->u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2241
+u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116.clk
+u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2241
+1943 0.057000 2.291000 2.348000 0 1
+u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_25 u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2241.ce
 
 
-Endpoint: u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2353
-1767 0.057000 1 1
-Timing path: u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_111.clk->u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2353
-u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_111.clk
-u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2353
-1769 0.057000 2.291000 2.348000 0 1
-u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_21 u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2353.ce
+Endpoint: u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2238
+1977 0.057000 1 1
+Timing path: u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116.clk->u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2238
+u8_encoder/u13_sin/u21_sample/conv_done_reg_reg_syn_116.clk
+u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2238
+1979 0.057000 2.291000 2.348000 0 1
+u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_25 u8_encoder/u13_sin/u22_fir/U1_fir/reg0_syn_2238.ce
 
 
 
@@ -452,10 +487,10 @@ u8_encoder/u13_sin/u21_sample/conv_done_reg_dup_21 u8_encoder/u13_sin/u22_fir/U1
 Timing group statistics: 
 	Clock constraints: 
 	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
-	  u1_pll/pll_inst.clkc[3] (5.0MHz)             197.875ns       5.054MHz        0.326ns       620        0.000ns
-	  u1_pll/pll_inst.clkc[1] (200.0MHz)             5.185ns     192.864MHz        0.480ns       379       -0.248ns
-	  u1_pll/pll_inst.clkc[2] (100.0MHz)            10.426ns      95.914MHz        0.480ns       214       -0.567ns
-	  u1_pll/pll_inst.clkc[0] (400.0MHz)             2.463ns     406.000MHz        0.326ns        22        0.000ns
+	  u1_pll/pll_inst.clkc[3] (5.0MHz)             197.580ns       5.061MHz        0.326ns       616        0.000ns
+	  u1_pll/pll_inst.clkc[1] (200.0MHz)             6.575ns     152.091MHz        0.480ns       378       -2.023ns
+	  u1_pll/pll_inst.clkc[2] (100.0MHz)            10.679ns      93.642MHz        0.480ns       220       -1.852ns
+	  u1_pll/pll_inst.clkc[0] (400.0MHz)             2.504ns     399.361MHz        0.326ns        21       -0.004ns
 	Minimum input arrival time before clock: no constraint path
 	Maximum output required time after clock: no constraint path
 	Maximum combinational path delay: no constraint path

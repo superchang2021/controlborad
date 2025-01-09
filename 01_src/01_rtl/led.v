@@ -18,10 +18,10 @@
 module led(
   input          clk,      // sys clock
   input          rst_n,    // sys reset
-    output [3:0] led       // led
+    output [1:0] led       // led
 );
 // reg define
-reg  [3:0] led_reg;    // led register
+reg  [1:0] led_reg;    // led register
 reg [27:0] timer;      // timer
 // assign define
 assign led = led_reg;
@@ -33,7 +33,7 @@ always @(posedge clk or negedge rst_n) begin
     timer <= 28'd0;
   end
 // 4 seconds count(50M*4-1=199999999)
-  else if ( timer == 28'd199_999_999 ) begin
+  else if ( timer == 28'd49_999_999 ) begin
     timer <= 28'd0;
   end
   else begin
@@ -45,24 +45,16 @@ end
 //////////////////////////////////////////////////////////////////////////////////
 always @(posedge clk or negedge rst_n) begin
   if (~rst_n) begin
-    led_reg <= 4'b1111;
+    led_reg <= 2'b11;
   end
 // time counter count to 1st sec,LED1 lighten
-  else if( timer == 28'd49_999_999 ) begin
-    led_reg <= 4'b1110;
+  else if( timer == 28'd29_999_999 ) begin
+    led_reg <= 2'b10;
   end
 // time counter count to 2nd sec,LED2 lighten
-  else if( timer == 28'd99_999_999 ) begin
-    led_reg <= 4'b1101;
-  end
-// time counter count to 3nd sec,LED3 lighten
-  else if ( timer == 28'd149_999_999 ) begin
-    led_reg <= 4'b1011;
-  end
-// time counter count to 4nd sec,LED4 lighten
-  else if ( timer == 28'd199_999_999 ) begin
-    led_reg <= 4'b0111;
-  end          
+  else if( timer == 28'd49_999_999 ) begin
+    led_reg <= 2'b01;
+  end      
 end
 
 endmodule

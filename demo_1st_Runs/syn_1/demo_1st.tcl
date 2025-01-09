@@ -39,24 +39,12 @@ proc step_error { step } {
   set ch [open $errorFile w]
   close $ch
 }
-step_begin read_design
-set ACTIVESTEP read_design
-set rc [catch {
-  open_project {demo_1st.prj}
-  import_device eagle_20.db -package EG4X20BG256
-  elaborate -top {demo_1st_top}
-  export_db {demo_1st_elaborate.db}
-} RESULT]
-if {$rc} {
-  step_error read_design
-  return -code error $RESULT
-} else {
-  step_end read_design
-  unset ACTIVESTEP
-}
 step_begin opt_rtl
 set ACTIVESTEP opt_rtl
 set rc [catch {
+  open_project {demo_1st.prj}
+  import_device eagle_20.db -package EG4X20BG256
+  import_db {demo_1st_elaborate.db}
   read_adc ../../01_src/04_pin/demo_1st.adc
   optimize_rtl
   report_area -file demo_1st_rtl.area

@@ -2,37 +2,37 @@ standard
 ***Report Model: demo_1st_top Device: EG4X20BG256***
 
 IO Statistics
-#IO                        53
-  #input                   25
-  #output                   9
-  #inout                   19
+#IO                        54
+  #input                   28
+  #output                  10
+  #inout                   16
 
 Gate Statistics
-#Basic gates             3598
-  #and                    603
+#Basic gates             3569
+  #and                    596
   #nand                     0
-  #or                     262
+  #or                     260
   #nor                      0
   #xor                     98
   #xnor                     0
   #buf                      0
-  #not                    161
-  #bufif1                  19
-  #MX21                   418
+  #not                    155
+  #bufif1                  16
+  #MX21                   414
   #FADD                     0
-  #DFF                   2037
+  #DFF                   2030
   #LATCH                    0
 #MACRO_ADD                103
-#MACRO_EQ                 211
+#MACRO_EQ                 209
 #MACRO_MULT                64
-#MACRO_MUX                714
+#MACRO_MUX                712
 #MACRO_OTHERS               2
 
 Report Hierarchy Area:
 +--------------------------------------------------------------------+
 |Instance               |Module              |gates  |seq    |macros |
 +--------------------------------------------------------------------+
-|top                    |demo_1st_top        |1561   |2037   |380    |
+|top                    |demo_1st_top        |1539   |2030   |378    |
 |  u1_pll               |my_pll              |0      |0      |1      |
 |  u2_rst               |rst_BUFG            |0      |0      |1      |
 |  u3_op                |emif_signal_op      |4      |9      |3      |
@@ -40,7 +40,7 @@ Report Hierarchy Area:
 |  u5_control           |emif_control        |11     |13     |0      |
 |  u6_emif_read         |emif_read           |14     |55     |3      |
 |  u7_emif_write        |emif_write          |10     |16     |0      |
-|  u8_encoder           |encoder_control     |1478   |1881   |364    |
+|  u8_encoder           |encoder_control     |1476   |1881   |364    |
 |    u10_abz            |four_sub            |47     |41     |14     |
 |    u11_biss           |biss_controll       |334    |141    |50     |
 |      U2_control       |biss_control_in     |245    |91     |47     |
@@ -51,12 +51,12 @@ Report Hierarchy Area:
 |      u22_fir          |fir                 |0      |1056   |126    |
 |        U1_fir         |filter_verilog      |0      |528    |63     |
 |        U2_fir         |filter_verilog      |0      |528    |63     |
-|    u14_tawa           |tawa_control        |418    |193    |29     |
-|      u31_uart_control |uart_control        |277    |131    |12     |
+|    u14_tawa           |tawa_control        |416    |193    |29     |
+|      u31_uart_control |uart_control        |275    |131    |12     |
 |      u32_uart_recv    |uart_recv           |56     |32     |12     |
 |      u33_uart_send    |uart_send           |13     |22     |5      |
 |      u34_crc          |crc_calc            |72     |8      |0      |
 |    u15_endat          |endat_control       |357    |207    |39     |
 |      u41_control      |endat_contol_sample |357    |207    |39     |
-|  u9_led               |led                 |13     |32     |5      |
+|  u9_led               |led                 |0      |30     |3      |
 +--------------------------------------------------------------------+

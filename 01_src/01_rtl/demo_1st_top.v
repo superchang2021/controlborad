@@ -33,16 +33,19 @@ module demo_1st_top(
 // encoder interface
   input          sdo_a,           // sincos a in
   input          sdo_b,           // sincos b in
+  input          a_in,
+  input          b_in,
+  input          z_in,
     output       sincos_clk,      // sincos clk
     output       sincos_cs_n,     // sincos cs_n
     output       a_out_able,      // a out able,high active
     output       b_out_able,      // b out able,high active
     output       z_out_able,      // z out able,high active
-    inout        encoder_a,       // encoder a
-    inout        encoder_b,       // encoder b
-    inout        encoder_z,       // encoder z
+    output       a_out,
+    output       b_out,
+    output       z_out,
 // peripherals interface
-    output [3:0] led_out          // led
+    output [1:0] led_out          // led
 );
 // parameter define
 
@@ -83,10 +86,10 @@ reg         encoder_a_reg;    // encoder a reg when output
 reg         encoder_b_reg;    // encoder b reg when output
 reg         encoder_z_reg;    // encoder z reg when output
 // assign define
-assign emif_data = emif_data_reg;
-assign encoder_a = encoder_a_reg;
-assign encoder_b = encoder_b_reg;
-assign encoder_z = encoder_z_reg;
+assign emif_data  = emif_data_reg;
+assign a_out      = encoder_a_reg;
+assign b_out      = encoder_b_reg;
+assign z_out      = encoder_z_reg;
 assign a_out_able = flag_a_out;
 assign b_out_able = flag_b_out;
 assign z_out_able = flag_z_out;
@@ -216,16 +219,16 @@ encoder_control u8_encoder(
 .clk_5M          (clk_5M),        // 5MHz
 .rst_n           (rst_n),         // reset
 // signal input
-.data_a_in       (encoder_a),     // encoder a data to fpga
-.data_b_in       (encoder_b),     // encoder b data to fpga
-.data_z_in       (encoder_z),     // encoder z data to fpga
+.data_a_in       (a_in),          // encoder a data to fpga
+.data_b_in       (b_in),          // encoder b data to fpga
+.data_z_in       (z_in),          // encoder z data to fpga
 .mode            (encoder_mode),  // encoder mode
 .sdo_a           (sdo_a),         // sincos data to fpga
 .sdo_b           (sdo_b),         // sincos data to fpga
 // signal output
-  .data_a_out    (data_a_out),    // fpga output to encoder a data
-  .data_b_out    (data_b_out),    // fpga output to encoder b data
-  .data_z_out    (data_z_out),    // fpga output to encoder z data
+  .data_a_out    (a_out),         // fpga output to encoder a data
+  .data_b_out    (b_out),         // fpga output to encoder b data
+  .data_z_out    (z_out),         // fpga output to encoder z data
   .a_out         (flag_a_out),    // fpga output to encoder a able
   .b_out         (flag_b_out),    // fpga output to encoder b able
   .z_out         (flag_z_out),    // fpga output to encoder z able
@@ -255,27 +258,6 @@ always @(posedge clk_400M or negedge rst_n) begin
   end
   else begin
     emif_data_reg <= 16'hzzzz;
-  end
-end
-always @(posedge clk_100M or negedge rst_n) begin
-  if(~rst_n) begin
-    encoder_a_reg <= 1'b0;
-    encoder_b_reg <= 1'b0;
-    encoder_z_reg <= 1'b0;
-  end
-  else if(flag_a_out) begin
-    encoder_a_reg <= data_a_out;
-  end
-  else if(flag_b_out) begin
-    encoder_b_reg <= data_b_out;
-  end
-  else if(flag_z_out) begin
-    encoder_z_reg <= data_z_out;
-  end
-  else begin
-    encoder_a_reg <= 1'bz;
-    encoder_b_reg <= 1'bz;
-    encoder_z_reg <= 1'bz;
   end
 end
 
